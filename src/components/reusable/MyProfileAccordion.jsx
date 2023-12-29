@@ -1,20 +1,29 @@
+// MyProfileAccordion.jsx
+
 import React, { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import AudioPlayer from '../music/components/audioplayer';
 
+// ...
+
 const MyProfileAccordion = () => {
-  const [activeTab, setActiveTab] = useState(1);
+  const [activeTab, setActiveTab] = useState(2); // Mengubah nilai awal menjadi 2
   const controls = useAnimation();
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     controls.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
   }, [activeTab, controls]);
 
   const handleTabClick = (tabIndex) => {
-    setActiveTab(activeTab === tabIndex ? null : tabIndex);
-  };
+    if (tabIndex === 2) {
+      // Jika mengklik tab "Favorite Music", toggle musik
+      toggleMusic();
+    }
 
-  const [isPlaying, setIsPlaying] = useState(false);
+    // Tetap set nilai activeTab
+    setActiveTab(tabIndex);
+  };
 
   const toggleMusic = () => {
     setIsPlaying(!isPlaying);
@@ -48,15 +57,10 @@ const MyProfileAccordion = () => {
                 ? 'text-blue-500 font-bold'
                 : 'text-ternary-dark dark:text-ternary-light'
             }`}
-            onClick={() => {
-              handleTabClick(2);
-              toggleMusic();
-            }}
+            onClick={() => handleTabClick(2)}
           >
             Favorite Music
           </motion.li>
-
-        
         </ul>
       </div>
 
@@ -87,13 +91,11 @@ const MyProfileAccordion = () => {
             exit={{ opacity: 0 }}
           >
             <h3 className='text-xl text-center font-medium mb-2 text-ternary-dark dark:text-ternary-light'>
-            Favorite Music
+              Favorite Music
             </h3>
-          
-            <AudioPlayer />
+            <AudioPlayer isPlaying={isPlaying} />
           </motion.div>
         )}
-      
       </div>
     </motion.div>
   );
