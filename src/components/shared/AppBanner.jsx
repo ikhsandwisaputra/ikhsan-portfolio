@@ -5,7 +5,7 @@ import { FiGithub } from 'react-icons/fi';
 import { FiLinkedin } from 'react-icons/fi';
 import { MdMail } from 'react-icons/md';
 // import foto from '../../images/2.png';
-import foto from '../../images/mu-foto/ikhsan-pp/1.png';
+import foto from '../../images/mu-foto/ikhsan-pp/11.png';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
 import Marque from './Marque';

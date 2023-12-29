@@ -1,10 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import pic from '../../images/mu-foto/1.jpeg';
-import { BsDownload } from 'react-icons/bs';
-import { saveAs } from 'file-saver';
+import pic from '../../images/mu-foto/about.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../../css/sorot.css'; // Sesuaikan dengan nama file CSS Anda
+import file from '../../pdf/Ikhsan-dwi-saputra-resume.pdf';
 
 const About = () => {
   useEffect(() => {
@@ -43,12 +42,12 @@ const About = () => {
 
   const handleDownload = () => {
     // Gantilah 'path/to/your-resume.pdf' dengan path sesuai lokasi file resume Anda
-    const resumeFilePath = '../../pdf/ikhsan-dwi-saputra-resume.pdf';
+    const resumeFilePath = file;
 
     // Membuat elemen anchor untuk download
     const downloadLink = document.createElement('a');
     downloadLink.href = resumeFilePath;
-    downloadLink.download = 'ikhsan-dwi-saputra-resume.pdf';  // Nama file yang akan diunduh
+    downloadLink.download = file; // Nama file yang akan diunduh
 
     // Simulasikan klik pada elemen anchor
     downloadLink.click();
@@ -62,8 +61,6 @@ const About = () => {
             About Me
           </p>
         </div>
-
-       
 
         <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
           <div className='flex justify-center items-center'>
@@ -82,7 +79,7 @@ const About = () => {
               <span className='highlight-container opacity-0 hidden'>
                 <span className='highlight-text'></span>
               </span>
-               i'm a full stack developer with{''}{' '}
+              i'm a full stack developer with{''}{' '}
               <span className='highlight-container'>
                 <span className='highlight-text'>3 years of experience</span>
               </span>
@@ -90,9 +87,9 @@ const About = () => {
               <span className='highlight-container'>
                 <span className='highlight-text'>web development</span>
               </span>
-              technology so much that it requires me to keep learning.
-              If you are looking for reliable and innovative web development
-              solutions, I am here to
+              technology so much that it requires me to keep learning. If you
+              are looking for reliable and innovative web development solutions,
+              I am here to
               <span className='highlight-container w-fit'>
                 <span className='highlight-text text-lg leading-7 text-ternary-dark dark:text-ternary-light'>
                   help and look
@@ -104,7 +101,6 @@ const About = () => {
                   future projects.
                 </span>
               </span>
-             
             </div>
 
             <div className='mt-4 mx-auto'>
