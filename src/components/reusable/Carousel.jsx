@@ -43,10 +43,7 @@ const Carousel = ({ items, autoSlideInterval = 7000 }) => {
   return (
     <div
       className='relative mt-5 mb-10'
-      onMouseEnter={() => clearInterval(interval)}
-      onMouseLeave={() => startAutoSlide()}
-      onTouchStart={() => clearInterval(interval)}
-      onTouchEnd={() => startAutoSlide()}
+     
     >
       <div className='overflow-hidden sm:max-w-[800px] sm:max-h-[450px] mx-auto rounded-xl relative aspect-video'>
         <div

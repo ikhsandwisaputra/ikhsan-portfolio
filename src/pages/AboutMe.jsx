@@ -1,10 +1,10 @@
 import AboutMeBio from '../components/about/AboutMeBio';
-import { AboutMeProvider } from '../context/AboutMeContext';
+
 import { motion } from 'framer-motion';
 import Resume from '../components/resume2/Resume';
 const About = () => {
 	return (
-		<AboutMeProvider>
+		<>
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1, delay: 1 }}
@@ -33,7 +33,7 @@ const About = () => {
 			>
 				{/* <AboutClients /> */}
 			</motion.div>
-		</AboutMeProvider>
+		</>
 	);
 };
 

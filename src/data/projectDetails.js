@@ -10,6 +10,64 @@ import WebImage9 from '../images/my-project/lol.png';
 import WebImage10 from '../images/my-project/shoes.png';
 import WebImage11 from '../images/my-project/anime.png';
 
+import kopi1 from '../images/DETAIL-PROJECT/kopi-1.png';
+import kopi2 from '../images/DETAIL-PROJECT/kopi-2.png';
+import kopi3 from '../images/DETAIL-PROJECT/kopi-3.png';
+import kopi4 from '../images/DETAIL-PROJECT/kopi-4.png';
+
+import  pb1 from '../images/DETAIL-PROJECT/pb-1.png';
+import  pb2 from '../images/DETAIL-PROJECT/pb-2.png';
+import  pb3 from '../images/DETAIL-PROJECT/pb-3.png';
+import  pb4 from '../images/DETAIL-PROJECT/pb-4.png';
+
+import  ekskul1 from '../images/DETAIL-PROJECT/ekskul-1.png';
+import  ekskul2 from '../images/DETAIL-PROJECT/ekskul-2.png';
+import  ekskul3 from '../images/DETAIL-PROJECT/ekskul-3.png';
+import ekskul4 from '../images/DETAIL-PROJECT/ekskul-4.png';
+
+import  dokter1 from '../images/DETAIL-PROJECT/sidoc-1.png';
+import  dokter2 from '../images/DETAIL-PROJECT/sidoc-2.png';
+import  dokter3 from '../images/DETAIL-PROJECT/sidoc-3.png';
+import dokter4 from '../images/DETAIL-PROJECT/sidoc-4.png';
+
+import  sbi1 from '../images/DETAIL-PROJECT/sbi-1.png';
+import  sbi2 from '../images/DETAIL-PROJECT/sbi-2.png';
+import  sbi3 from '../images/DETAIL-PROJECT/sbi-3.png';
+import sbi4 from '../images/DETAIL-PROJECT/sbi-4.png';
+
+import  tajwid1 from '../images/DETAIL-PROJECT/quran-1.png';
+import  tajwid2 from '../images/DETAIL-PROJECT/quran-2.png';
+import  tajwid3 from '../images/DETAIL-PROJECT/quran-3.png';
+import tajwid4 from '../images/DETAIL-PROJECT/quran-4.png';
+
+import  sitalenta1 from '../images/DETAIL-PROJECT/sitalenta-1.png';
+import  sitalenta2 from '../images/DETAIL-PROJECT/sitalenta-2.png';
+import  sitalenta3 from '../images/DETAIL-PROJECT/sitalenta-3.png';
+import sitalenta4 from '../images/DETAIL-PROJECT/sitalenta-4.png';
+
+
+import  bali1 from '../images/DETAIL-PROJECT/bali-1.png';
+import  bali2 from '../images/DETAIL-PROJECT/bali-2.png';
+
+import  lol1 from '../images/DETAIL-PROJECT/lol-1.png';
+import  lol2 from '../images/DETAIL-PROJECT/lol-2.png';
+import lol3 from '../images/DETAIL-PROJECT/lol-3.png';
+
+import  shoes1 from '../images/DETAIL-PROJECT/sepatu-1.png';
+import shoes2 from '../images/DETAIL-PROJECT/sepatu-2.png';
+
+import  anime1 from '../images/DETAIL-PROJECT/anime-1.png';
+import  anime2 from '../images/DETAIL-PROJECT/anime-2.png';
+import anime3 from '../images/DETAIL-PROJECT/anime-2.png';
+
+import canada1 from '../images/my-project/minum.png';
+
+import  makan1 from '../images/DETAIL-PROJECT/makan-1.png';
+import  makan2 from '../images/DETAIL-PROJECT/makan-2.png';
+import  makan3 from '../images/DETAIL-PROJECT/makan-3.png';
+import  makan4 from '../images/DETAIL-PROJECT/makan-4.png';
+
+
 const projectDetails = {
   1: {
     id: 1,
@@ -19,10 +77,10 @@ const projectDetails = {
     ProjectInfo: {
       Images: [
         {
-          img1: '../../src/images/DETAIL-PROJECT/kopi-1.png',
-          img2: '../../src/images/DETAIL-PROJECT/kopi-2.png',
-          img3: '../../src/images/DETAIL-PROJECT/kopi-3.png',
-          img4: '../../src/images/DETAIL-PROJECT/kopi-4.png',
+          img1: kopi1,
+          img2: kopi2,
+          img3: kopi3,
+          img4: kopi4,
         },
       ],
       Technologies: [
@@ -83,10 +141,10 @@ const projectDetails = {
     ProjectInfo: {
       Images: [
         {
-          img1: '../../src/images/DETAIL-PROJECT/pb-1.png',
-          img2: '../../src/images/DETAIL-PROJECT/pb-2.png',
-          img3: '../../src/images/DETAIL-PROJECT/pb-3.png',
-          img4: '../../src/images/DETAIL-PROJECT/pb-4.png',
+          img1: pb1,
+          img2: pb2,
+          img3: pb3,
+          img4: pb4
         },
       ],
       Technologies: [
@@ -144,10 +202,10 @@ const projectDetails = {
     ProjectInfo: {
       Images: [
         {
-          img1: '../../src/images/DETAIL-PROJECT/ekskul-1.png',
-          img2: '../../src/images/DETAIL-PROJECT/ekskul-2.png',
-          img3: '../../src/images/DETAIL-PROJECT/ekskul-3.png',
-          img4: '../../src/images/DETAIL-PROJECT/ekskul-4.png',
+          img1: ekskul1,
+          img2: ekskul2,
+          img3: ekskul3,
+          img4: ekskul4,
         },
       ],
       Technologies: [
@@ -216,10 +274,10 @@ const projectDetails = {
     ProjectInfo: {
       Images: [
         {
-          img1: '../../src/images/DETAIL-PROJECT/sidoc-1.png',
-          img2: '../../src/images/DETAIL-PROJECT/sidoc-2.png',
-          img3: '../../src/images/DETAIL-PROJECT/sidoc-3.png',
-          img4: '../../src/images/DETAIL-PROJECT/sidoc-4.png',
+          img1: dokter1,
+          img2: dokter2,
+          img3: dokter3,
+          img4: dokter4,
         },
       ],
       Technologies: [
@@ -287,10 +345,10 @@ const projectDetails = {
     ProjectInfo: {
       Images: [
         {
-          img1: '../../src/images/DETAIL-PROJECT/sbi-1.png',
-          img2: '../../src/images/DETAIL-PROJECT/sbi-2.png',
-          img3: '../../src/images/DETAIL-PROJECT/sbi-3.png',
-          img4: '../../src/images/DETAIL-PROJECT/sbi-4.png',
+          img1: sbi1,
+          img2: sbi2,
+          img3: sbi3,
+          img4: sbi4,
         },
       ],
       Technologies: [
@@ -351,10 +409,10 @@ const projectDetails = {
     ProjectInfo: {
       Images: [
         {
-          img1: '../../src/images/DETAIL-PROJECT/quran-1.png',
-          img2: '../../src/images/DETAIL-PROJECT/quran-2.png',
-          img3: '../../src/images/DETAIL-PROJECT/quran-3.png',
-          img4: '../../src/images/DETAIL-PROJECT/quran-4.png',
+          img1: tajwid1,
+          img2: tajwid2,
+          img3: tajwid3,
+          img4: tajwid4,
         },
       ],
       Technologies: [
@@ -415,10 +473,10 @@ const projectDetails = {
     ProjectInfo: {
       Images: [
         {
-          img1: '../../src/images/DETAIL-PROJECT/sitalenta-1.png',
-          img2: '../../src/images/DETAIL-PROJECT/sitalenta-2.png',
-          img3: '../../src/images/DETAIL-PROJECT/sitalenta-3.png',
-          img4: '../../src/images/DETAIL-PROJECT/sitalenta-4.png',
+          img1: sitalenta1,
+          img2: sitalenta2,
+          img3: sitalenta3,
+          img4: sitalenta4,
         },
       ],
       Technologies: [
@@ -479,8 +537,8 @@ const projectDetails = {
     ProjectInfo: {
       Images: [
         {
-          img1: '../../src/images/DETAIL-PROJECT/bali-1.png',
-          img2: '../../src/images/DETAIL-PROJECT/bali-2.png',
+          img1: bali1,
+          img2: bali2,
           // img3: '../../src/images/DETAIL-PROJECT/bali-3.png',
           // img4: '../../src/images/DETAIL-PROJECT/bali-4.png',
         },
@@ -542,9 +600,9 @@ const projectDetails = {
     ProjectInfo: {
       Images: [
         {
-          img1: '../../src/images/DETAIL-PROJECT/lol-1.png',
-          img2: '../../src/images/DETAIL-PROJECT/lol-2.png',
-          img3: '../../src/images/DETAIL-PROJECT/lol-3.png',
+          img1: lol1,
+          img2: lol2,
+          img3: lol3,
           // img4: '../../src/images/DETAIL-PROJECT/bali-4.png',
         },
       ],
@@ -605,8 +663,8 @@ const projectDetails = {
     ProjectInfo: {
       Images: [
         {
-          img1: '../../src/images/DETAIL-PROJECT/sepatu-1.png',
-          img2: '../../src/images/DETAIL-PROJECT/sepatu-2.png',
+          img1: shoes1,
+          img2: shoes2,
           // img3: '../../src/images/DETAIL-PROJECT/lol-3.png',
           // img4: '../../src/images/DETAIL-PROJECT/bali-4.png',
         },
@@ -669,9 +727,9 @@ const projectDetails = {
     ProjectInfo: {
       Images: [
         {
-          img1: '../../src/images/DETAIL-PROJECT/anime-1.png',
-          img2: '../../src/images/DETAIL-PROJECT/anime-2.png',
-          img3: '../../src/images/DETAIL-PROJECT/anime-3.png',
+          img1: anime1,
+          img2: anime2,
+          img3: anime3,
           // img4: '../../src/images/DETAIL-PROJECT/bali-4.png',
         },
       ],
@@ -686,7 +744,7 @@ const projectDetails = {
           title: 'Demo',
           githubUrl:
           "https://github.com/ikhsandwisaputra/anime-web",
-          webUrl: "https://github.com/ikhsandwisaputra/anime-web",
+          webUrl: "https://ikhsandwisaputra.github.io/anime-web",
         },
       ],
       ProjectDetailsHeading: 'Description',
@@ -732,7 +790,7 @@ const projectDetails = {
     ProjectInfo: {
       Images: [
         {
-          img1: '../../src/images/my-project/minum.png',
+          img1: canada1,
           // img2: '../../src/images/DETAIL-PROJECT/anime-2.png',
           // img3: '../../src/images/DETAIL-PROJECT/anime-3.png',
           // img4: '../../src/images/DETAIL-PROJECT/bali-4.png',
@@ -796,10 +854,10 @@ const projectDetails = {
     ProjectInfo: {
       Images: [
         {
-          img1: '../../src/images/DETAIL-PROJECT/makan-1.png',
-          img2: '../../src/images/DETAIL-PROJECT/makan-2.png',
-          img3: '../../src/images/DETAIL-PROJECT/makan-3.png',
-          img4: '../../src/images/DETAIL-PROJECT/makan-4.png',
+          img1: makan1,
+          img2: makan2,
+          img3: makan3,
+          img4: makan4,
         },
       ],
       Technologies: [
