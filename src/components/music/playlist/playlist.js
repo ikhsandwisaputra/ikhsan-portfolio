@@ -1,13 +1,13 @@
-import trackOne from './songs/Juice WRLD, Eminem & benny blanco - Lace It (Official Audio).mp3'
+import trackOne from './songs/lace-it.mp3'
 import trackTwo from './songs/I Wanna Be Yours.mp3';
-import trackThree from './songs/The Beatles - Hey Jude.mp3';
+import trackThree from './songs/hey-jude.mp3';
 import trackFour from './songs/Whatever.mp3';
 import trackFive from './songs/Wonderwall.mp3';
-import trackSix from './songs/GODS ft. NewJeans (뉴진스) (Official Music Video) - Worlds 2023 Anthem - League of Legends.mp3';
-import trackSeven from './songs/Nadhif Basalamah - penjaga hati (Lirik).mp3';
+import trackSix from './songs/gods.mp3';
+import trackSeven from './songs/penjaga-hati.mp3';
 import trackEight from './songs/505.mp3';
-import trackNine from './songs/@coldplay - Fix You (Lyrics).mp3';
-import trackTen from './songs/BTS - Life Goes On EASY LYRICS_INDO SUB by GOMAWO.mp3';
+import trackNine from './songs/fix-you.mp3';
+import trackTen from './songs/life-goes-on.mp3';
 
 import coverArtOne from './cover-art/1.jpg';
 import coverArtTwo from './cover-art/2.png';
