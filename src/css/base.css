@@ -2,16 +2,20 @@
 .marquee-container {
   overflow: hidden;
   white-space: nowrap;
-  padding: 1px; /* Sesuaikan sesuai kebutuhan desain */
+  
+  
 }
 
 .marquee-text {
   display: inline-block;
-  padding: 0 10px;
-  animation: marquee 45s linear infinite;
+  animation: marquee 65s linear infinite; /* Sesuaikan durasi dan kecepatan animasi */
 }
 
 @keyframes marquee {
-  /* 0% { transform: translateX(100%); } */
-  100% { transform: translateX(-100%); }
+  /* 0% {
+    transform: translateX(100%);
+  } */
+  100% {
+    transform: translateX(-100%);
+  }
 }

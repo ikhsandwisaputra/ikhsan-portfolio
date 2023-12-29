@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy" : "gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -26,6 +26,7 @@
     "react-countup": "^6.1.1",
     "react-dom": "^18.2.0",
     "react-emoji-render": "^2.0.1",
+    "react-fast-marquee": "^1.6.2",
     "react-highlight-words": "^0.20.0",
     "react-icons": "^4.3.1",
     "react-particles-js": "^3.6.0",
