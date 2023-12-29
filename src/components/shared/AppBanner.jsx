@@ -33,7 +33,7 @@ const AppBanner = () => {
         initial={{ opacity: 0, y: -180 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
-        className='mx-auto w-[300px] h-[300px] sm:w-[300px] sm:h-[300px] sm:mt-0   rounded-full flex justify-center  items-center z-20 relative'
+        className='mx-auto w-[230px] h-[230px] sm:w-[300px] sm:h-[300px] sm:mt-0   rounded-full flex justify-center  items-center z-20 relative'
       >
         <div className='absolute top-0 left-0 w-full h-full bg-black opacity-40 rounded-full'></div>
         <img
@@ -109,7 +109,7 @@ const AppBanner = () => {
       >
         <a
           href='https://github.com/ikhsandwisaputra'
-          className='font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-2 shadow-lg rounded-lg bg-lime-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500'
+          className='font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-2 shadow-lg rounded-lg bg-ternary-light focus:ring-1 focus:ring-indigo-900 hover:bg-ternary-dark text-gray-500 hover:text-white duration-500'
           // aria-label='Download Resume'
           target='_blank'
         >
@@ -121,7 +121,7 @@ const AppBanner = () => {
         <a
           href='https://www.linkedin.com/in/ikhsan-dwi-saputra-339482297/'
           target='_blank'
-          className='font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-2 shadow-lg rounded-lg bg-lime-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500'
+          className='font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-2 shadow-lg rounded-lg bg-ternary-light focus:ring-1 focus:ring-green-900 hover:bg-ternary-dark text-gray-500 hover:text-white duration-500'
           aria-label='Download Resume'
         >
           <FiLinkedin className='mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100'></FiLinkedin>
@@ -131,7 +131,7 @@ const AppBanner = () => {
         </a>
         <a
           href='mailto:ikhsandwisaputraaaa@gmail.com'
-          className='font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-2 shadow-lg rounded-lg bg-lime-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500'
+          className='font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-2 shadow-lg rounded-lg bg-ternary-light focus:ring-1 focus:ring-indigo-900 hover:bg-ternary-dark text-gray-500 hover:text-white duration-500'
           aria-label='Download Resume'
         >
           <MdMail className='mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100'></MdMail>
