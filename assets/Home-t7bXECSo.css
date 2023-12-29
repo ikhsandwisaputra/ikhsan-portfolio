@@ -1,1 +1,0 @@
-.marquee-container{overflow:hidden;white-space:nowrap;padding:1px}.marquee-text{display:inline-block;padding:0 10px;animation:marquee 45s linear infinite}@keyframes marquee{to{transform:translate(-100%)}}
