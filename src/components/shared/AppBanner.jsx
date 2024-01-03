@@ -8,7 +8,6 @@ import { MdMail } from 'react-icons/md';
 import foto from '../../images/mu-foto/ikhsan-pp/11.png';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
-import Marque from './Marque';
 import '../../css/hi.css';
 const AppBanner = () => {
   const [activeTheme] = useThemeSwitcher();
@@ -140,7 +139,6 @@ const AppBanner = () => {
           </span>
         </a>
       </motion.div>
-      <Marque />
     </motion.section>
   );
 };
