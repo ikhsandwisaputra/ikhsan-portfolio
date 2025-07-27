@@ -1,1 +1,0 @@
-@keyframes waveAnimation{0%,25%,50%,75%,to{transform:rotate(0)}12.5%{transform:rotate(-15deg)}37.5%{transform:rotate(15deg)}62.5%{transform:rotate(-15deg)}87.5%{transform:rotate(15deg)}}.waving-hand{display:inline-block;animation:waveAnimation 1.5s 4}.wave-text{display:inline-block;margin-right:8px}.waving-hand:hover{animation:waveAnimation 1.5s 4}
