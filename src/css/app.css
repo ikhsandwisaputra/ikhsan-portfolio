@@ -2,6 +2,9 @@
  * React & TailwindCSS Portfolio Main CSS File
  * Powered by: @realstoman
 */
+html {
+  scroll-behavior: smooth !important;
+}
 
 body {
 	font-family: 'GeneralSans-Variable';

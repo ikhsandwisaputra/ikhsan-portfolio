@@ -39,7 +39,7 @@ const MobileNav = () => {
   return (
     <>
       <motion.div
-        className='fixed top-4 right-4 flex items-center z-[999999] sm:hidden '
+        className='fixed top-4 right-4 flex items-center z-[999999999] sm:hidden '
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
       >

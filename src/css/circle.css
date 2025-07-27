@@ -1,0 +1,83 @@
+/* styles/blurLoader.css */
+.blur-loader-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 9999px;
+  height: 220px;
+  width: 220px;
+  animation: rotate_3922 1.2s linear infinite;
+  background-color: #CB0000;
+background-image: linear-gradient(to right, #2563eb, #22c55e); 
+  transform: translate(-50%, -50%);
+}
+
+.blur-loader-container span {
+  position: absolute;
+  border-radius: 9999px;
+  height: 100%;
+  width: 100%;
+  background-color: #cb0000;
+background-image: linear-gradient(to right, #2563eb, #22c55e);
+}
+/* RESPONSIVE - Mirip Tailwind */
+@media (min-width: 640px) { /* sm: */
+  .blur-loader-container {
+    width: 230px;
+    height: 230px;
+    background-color: red;
+  }
+}
+
+@media (min-width: 768px) { /* md: */
+  .blur-loader-container {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+@media (min-width: 1024px) { /* lg: */
+  .blur-loader-container {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+.blur-loader-container span:nth-of-type(1) {
+  filter: blur(5px);
+}
+
+.blur-loader-container span:nth-of-type(2) {
+  filter: blur(10px);
+}
+
+.blur-loader-container span:nth-of-type(3) {
+  filter: blur(25px);
+}
+
+.blur-loader-container span:nth-of-type(4) {
+  filter: blur(50px);
+}
+
+.blur-loader-container::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background-color: #fff;
+  border: solid 5px #ffffff;
+  border-radius: 9999px;
+}
+
+@keyframes rotate_3922 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+

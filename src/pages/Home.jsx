@@ -2,9 +2,10 @@ import { Link } from 'react-router-dom';
 import AppBanner from '../components/shared/AppBanner';
 import Button from '../components/reusable/Button';
 import Work from '../components/projects/Work';
+
 const Home = () => {
 	return (
-		<div className="container mx-auto">
+		<div className="mx-auto w-full">
 
 			<AppBanner></AppBanner>
 			<Work />

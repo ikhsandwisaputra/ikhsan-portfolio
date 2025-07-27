@@ -1,29 +1,47 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { works } from '../../data/Static';
+//  DATA SEMUA PROJEK
+import { works } from '../../data/Static2';
+
 import { BsGithub } from 'react-icons/bs';
 import { FaGlobe } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { FiSearch } from 'react-icons/fi';
 
+
 const Work = () => {
   useEffect(() => {
     AOS.init();
+   
   }, []);
 
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(''); // New state for selected category
+  const [selectedTech, setSelectedTech] = useState('REACT');
 
-  // Extract unique categories from works
-  const uniqueCategories = [...new Set(works.map((work) => work.category))];
+  const [categorySearch, setCategorySearch] = useState('');
+const [techSearch, setTechSearch] = useState('');
+const [isOpen, setIsOpen] = useState(false);
+const uniqueCategories = [...new Set(works.map((work) => work.category))];
+const uniqueTechs = [...new Set(works.flatMap((work) => work.tech))];
+
+// Filter daftar OPSI dropdown berdasarkan input pencarian
+const filteredUniqueCategories = uniqueCategories.filter((category) =>
+  category.toLowerCase().includes(categorySearch.toLowerCase())
+);
+
+const filteredUniqueTechs = uniqueTechs.filter((tech) =>
+  tech.toLowerCase().includes(techSearch.toLowerCase())
+);
 
   // Filter projects based on the search term and selected category
-  const filteredWorks = works.filter(
-    (work) =>
-      work.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
-      (selectedCategory === '' || work.category === selectedCategory)
-  );
+ const filteredWorks = works.filter(
+  (work) =>
+    work.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
+    (selectedCategory === '' || work.category === selectedCategory) &&
+    (selectedTech === '' || work.tech.includes(selectedTech)) // <-- Logika filter baru
+);
 
   return (
     <div name='work' className='w-full py-5 sm:py-15 md:py-25'>
@@ -33,62 +51,132 @@ const Work = () => {
             Work Gallery
           </h1>
         </div>
+
         <div className='flex justify-between items-center flex-wrap my-10 sm:flex-row flex-col gap-2'>
-          {/* Search input */}
-          <div className='flex justify-between gap-2 items-center'>
-            <FiSearch className='text-ternary-dark dark:text-ternary-light w-5 h-5'></FiSearch>
-            <input
-              type='text'
-              placeholder='Search projects...'
-              className='font-general-medium 
-            pl-3
-            pr-1
-            sm:px-4
-            py-2
-            border 
-        border-gray-200
-            dark:border-secondary-dark
-            rounded-lg
-            text-sm
-            sm:text-md
-            bg-secondary-light
-            dark:bg-ternary-dark
-            text-primary-dark
-            dark:text-ternary-light'
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-          </div>
-          {/* Category selection */}
-          <select
-            className='font-general-medium 
-            px-4
-            sm:px-6
-            py-2
-            border
-            dark:border-secondary-dark
-            rounded-lg
-            text-sm
-            sm:text-md
-            dark:font-medium
-            bg-secondary-light
-            dark:bg-ternary-dark
-            text-primary-dark
-            dark:text-ternary-light'
-            value={selectedCategory}
-            onChange={(e) => setSelectedCategory(e.target.value)}
+           <div className='flex justify-between gap-2 items-center'>
+                    <FiSearch className='text-ternary-dark dark:text-ternary-light w-5 h-5'></FiSearch>
+                    <input
+                      type='text'
+                      placeholder='Search projects...'
+                      className='font-general-medium 
+                    pl-3
+                    pr-1
+                    sm:px-4
+                    py-2
+                    border 
+                border-gray-200
+                    dark:border-secondary-dark
+                    rounded-lg
+                    text-sm
+                    sm:text-md
+                    bg-secondary-light
+                    dark:bg-ternary-dark
+                    text-primary-dark
+                    dark:text-ternary-light'
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                    />
+                  </div>
+         <div className='flex gap-4'>
+
+         <div>
+                  <select
+                    className='font-general-medium 
+                    px-4
+                    sm:px-6
+                    py-2
+                    border
+                    dark:border-secondary-dark
+                    rounded-lg
+                    text-sm
+                    sm:text-md
+                    dark:font-medium
+                    bg-secondary-light
+                    dark:bg-ternary-dark
+                    text-primary-dark
+                    dark:text-ternary-light'
+                    value={selectedCategory}
+                    onChange={(e) => setSelectedCategory(e.target.value)}
+                  >
+                    <option value=''>All Categories</option>
+                    {uniqueCategories.map((category) => (
+                      <option key={category} value={category} className='text-sm '>
+                        {category}
+                      </option>
+                    ))}
+                  </select>
+           </div>
+          <div className="relative w-full min-w-[200px] text-center">
+          {/* Tombol ini berfungsi sebagai pengganti <select> yang tertutup */}
+          <button
+            type="button"
+            onClick={() => setIsOpen(!isOpen)} // Buka/tutup dropdown saat diklik
+            className="font-general-medium w-full px-4 py-2 border rounded-lg text-left bg-secondary-light dark:bg-ternary-dark flex justify-between items-center"
           >
-            <option value=''>All Categories</option>
-            {uniqueCategories.map((category) => (
-              <option key={category} value={category} className='text-sm '>
-                {category}
-              </option>
-            ))}
-          </select>
+            {/* Tampilkan teknologi yang dipilih atau teks default */}
+            <span>{selectedTech || 'Pilih Teknologi'}</span>
+            {/* Ikon panah (opsional, tapi bagus untuk UX) */}
+            <svg className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-188' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+        
+          {/* Panel Dropdown: hanya muncul jika isOpen adalah true */}
+          {isOpen && (
+            <div className="absolute z-10 mt-2 w-full bg-secondary-light dark:bg-ternary-dark border rounded-lg shadow-lg">
+              {/* 1. Input Pencarian di dalam Dropdown */}
+              <div className="p-2">
+                <input
+                  type="text"
+                  placeholder="Cari teknologi..."
+                  value={techSearch}
+                  onChange={(e) => setTechSearch(e.target.value)}
+                  className="w-full px-3 py-2 border rounded-md text-sm"
+                />
+              </div>
+        
+              {/* 2. Daftar Pilihan */}
+              <ul className="max-h-60 overflow-y-auto">
+                <li
+    onClick={() => {
+      setSelectedTech(''); // <-- Kuncinya di sini: set state ke string kosong
+      setIsOpen(false);
+      setTechSearch('');
+    }}
+    className="px-4 py-2 text-sm hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer font-medium"
+  >
+    Semua Tech
+  </li>
+                {filteredUniqueTechs.map((tech) => (
+                  
+                  <li
+                    key={tech}
+                    onClick={() => {
+                      setSelectedTech(tech); // Atur teknologi yang dipilih
+                      setIsOpen(false);      // Tutup dropdown
+                      setTechSearch('');     // Reset pencarian
+                    }}
+                    className="px-4 py-2 text-sm hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer"
+                  >
+                    {tech}
+                  </li>
+                ))}
+                {/* Tampilkan pesan jika tidak ada hasil */}
+                {filteredUniqueTechs.length === 0 && (
+                    <li className="px-4 py-2 text-sm text-gray-500">
+                        Tidak ditemukan.
+                    </li>
+                )}
+              </ul>
+            </div>
+          )}
+        </div>
+
+         </div>
+        
+        
         </div>
 
         <div className='max-w-[1000px] w-full grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-3 gap-1 sm:gap-8 px-1 sm:px-4'>
           {/* Map over the filtered projects */}
-          {filteredWorks.map((work) => (
+          {filteredWorks.slice(0, 6).map((work) => (
             <Link
               to={`/projects/${work.idProjects}`}
               aria-label={`Detail ${work.title}`}

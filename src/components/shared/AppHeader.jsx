@@ -76,7 +76,7 @@ const AppHeader = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       id='nav'
-      className={`sm:container sm:mx-auto fixed top-0 left-0 right-0 z-[9999] bg-opacity-70 backdrop-filter backdrop-blur-md bg-white-5 sm:rounded-full py-0 hidden sm:block   ${
+      className={`sm:container sm:mx-auto fixed top-0 left-0 right-0 z-[9999999] bg-opacity-70 backdrop-filter backdrop-blur-md bg-white-5 sm:rounded-full py-0 hidden sm:block   ${
         isGlassEffect ? 'bg-glass' : ''
       }`}
     >

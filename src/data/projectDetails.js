@@ -546,7 +546,7 @@ const projectDetails = {
       Technologies: [
         {
           title: 'Tools & Technologies',
-          techs: ["HTML", "CSS", "JAVASCRIPT", "REACT", "TAILWIND CSS", "NODE JS", "VITE JS", "FIGMA"],
+          techs: ["REACT", "TAILWIND CSS", "NODE JS", "VITE JS", "FIGMA"],
         },
       ],
       Demo: [

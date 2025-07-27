@@ -9,6 +9,8 @@ import foto from '../../images/mu-foto/ikhsan-pp/11.png';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
 import '../../css/hi.css';
+import AnimatedBlock from '../AnimatedBlock';
+import CircleAnimate from '../CircleAnimate';
 const AppBanner = () => {
   const [activeTheme] = useThemeSwitcher();
   const [showEmoji, setShowEmoji] = useState(false);
@@ -22,11 +24,12 @@ const AppBanner = () => {
     return () => clearTimeout(timeout);
   }, []);
   return (
+    <>      
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
-      className='flex flex-col sm:justify-between items-center sm:flex-col pt-10 md:pt-32  relative overflow-hidden '
+      className='flex flex-col sm:justify-between items-center sm:flex-col pt-10 md:pt-32  relative overflow-hidden z-[999999]'
     >
       <motion.div
         initial={{ opacity: 0, y: -180 }}
@@ -34,6 +37,7 @@ const AppBanner = () => {
         transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
         className='mx-auto w-[230px] h-[230px] sm:w-[300px] sm:h-[300px] sm:mt-0   rounded-full flex justify-center  items-center z-20 relative'
       >
+        
         <div className='absolute top-0 left-0 w-full h-full bg-black opacity-40 rounded-full'></div>
         <img
           src={foto}
@@ -41,17 +45,21 @@ const AppBanner = () => {
           className='w-full h-full object-cover rounded-full z-20'
           style={{ objectFit: 'cover' }}
         />
+         <CircleAnimate/>
       </motion.div>
 
       <p className='text-3xl'>
         <span className='waving-hand' role='img' aria-label='Waving Hand'>
           👋
         </span>
-        <span className='wave-text font-general-semibold text-2xl lg:text-3xl xl:text-2xl pr-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-600 dark:from-blue-200 dark:to-green-200'>
+        <span className='wave-text font-general-semibold text-2xl lg:text-3xl xl:text-2xl pr-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-600 dark:from-blue-200 dark:to-green-200 pt-[30px]'>
           Hi, My Name is
         </span>
       </p>
+      <div className='absolute lg:right-[23%] lg:top-[80%] right-[5%] top-[75%] z-[-99998]'>
 
+<AnimatedBlock/>
+      </div>
       <motion.h1
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -82,13 +90,16 @@ const AppBanner = () => {
           }}
           onInit={(typewriter) => {
             typewriter
-              .typeString('Full Stack Web Developer')
+              .typeString('Front-End Developer.')
               .pauseFor(1000)
               .deleteAll()
-              .typeString('Enthusiast Tech')
+              .typeString('Back-End Developer.')
               .pauseFor(1000)
               .deleteAll()
-              .typeString('Students.')
+              .typeString('Full-Stack Developer.')
+              .pauseFor(1000)
+              .deleteAll()
+              .typeString('Programmer.')
               .pauseFor(1000)
               .deleteAll()
               .start();
@@ -106,8 +117,7 @@ const AppBanner = () => {
         }}
         className='w-full flex justify-center gap-2'
       >
-        <a
-          href='https://github.com/ikhsandwisaputra'
+        <a href='https://github.com/ikhsandwisaputra'
           className='font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-2 shadow-lg rounded-lg bg-ternary-light focus:ring-1 focus:ring-indigo-900 hover:bg-ternary-dark text-gray-500 hover:text-white duration-500'
           // aria-label='Download Resume'
           target='_blank'
@@ -140,6 +150,7 @@ const AppBanner = () => {
         </a>
       </motion.div>
     </motion.section>
+    </>
   );
 };
 

@@ -25,6 +25,7 @@ import WebImage4 from '../images/my-project/sidoc.png';
 import WebImage5 from '../images/my-project/sbi.png';
 import WebImage6 from '../images/my-project/quran.png';
 
+// const categories = ['ANGULAR', 'REACT', 'VUE'];
 // Array of work objects
 export const works = [
   {
@@ -32,7 +33,7 @@ export const works = [
     idProjects: 1,
     title: 'Landing Page Coffee',
     imgUrl: WebImage1,
-    tech: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP 5", "FIGMA"],
+    tech: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP 5", "FIGMA", "REACT"],
     githubUrl:
       "https://github.com/ikhsandwisaputra/coffee-landing-page",
     webUrl: "https://ikhsandwisaputra.github.io/coffee-landing-page/",
