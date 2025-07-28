@@ -29,6 +29,20 @@ import WebImage10 from '../images/my-project/shoes.png';
 import WebImage11 from '../images/my-project/anime.png';
 import WebImage12 from '../images/my-project/minum.png';
 import WebImage13 from '../images/my-project/nasi.png';
+  import WebImage14 from '../images/my-project/dashboard-analisis-penjualan/image-3.png';
+  import WebImage15 from '../images/my-project/dashboard-rumah-sakit/image-1.png';
+  import WebImage16 from '../images/my-project/rain-apps/image-1.png';
+  import WebImage17 from '../images/my-project/shoes-commerce/image-1.png';
+  import WebImage18 from '../images/my-project/yu-chat/image-1.png';
+  import WebImage19 from '../images/my-project/nft-web/image-1.png';
+  import WebImage20 from '../images/my-project/jersey-commerce/image-1.png';
+  import WebImage21 from '../images/my-project/web-kopi/image-1.png';
+  import WebImage22 from '../images/my-project/website-botani/image-1.png';
+  import WebImage23 from '../images/my-project/chatbot-vcare/image-1.png';
+  import WebImage24 from '../images/my-project/dashboard-sekolah/image-1.png';
+  import WebImage25 from '../images/my-project/passwordku-apps/image-1.png';
+  import WebImage26 from '../images/my-project/web-desa/image-1.png';
+
 // Array of work objects
 export const works = [
   {
@@ -87,7 +101,7 @@ export const works = [
     idProjects: 6,
     title: 'Application of Quran Tajweed per Page',
     imgUrl: WebImage6,
-    tech: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP 5", "PHP", "API CLOUD", "MYSQL", "DOCKER", "FIGMA"],
+    tech: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP 5", "PHP",  "MYSQL",  "FIGMA"],
     duration: "400",
     category: 'Web Application',
   },
@@ -105,7 +119,7 @@ export const works = [
     idProjects: 8,
     title: 'Bali Tourism Landing Page',
     imgUrl: WebImage8,
-    tech: ["REACT", "TAILWIND CSS", "NODE JS", "VITE JS", "FIGMA"],
+    tech: ["REACT", "TAILWIND CSS",   "FIGMA"],
     githubUrl: "https://github.com/ikhsandwisaputra/landing-page-bali",
     webUrl: "https://ikhsandwisaputra.github.io/landing-page-bali/",
     duration: "400",
@@ -116,7 +130,7 @@ export const works = [
     idProjects: 9,
     title: 'League of Legend (Fanmade) Landing Page',
     imgUrl: WebImage9,
-    tech: ["REACT", "TAILWIND CSS", "NODE JS", "VITE JS", "FIGMA"],
+    tech: ["REACT", "TAILWIND CSS",   "FIGMA"],
     githubUrl: "https://github.com/ikhsandwisaputra/lol-web",
     webUrl: "https://ikhsandwisaputra.github.io/lol-web/",
     duration: "400",
@@ -127,7 +141,7 @@ export const works = [
     idProjects: 10,
     title: 'Shoe Store Landing Page (Static Only)',
     imgUrl: WebImage10,
-    tech: ["REACT", "TAILWIND CSS", "NODE JS", "VITE JS", "FIGMA"],
+    tech: ["REACT", "TAILWIND CSS",   "FIGMA"],
     githubUrl: "https://github.com/ikhsandwisaputra/shoes-landing-page",
     webUrl: "https://ikhsandwisaputra.github.io/shoes-landing-page/",
     duration: "400",
@@ -138,7 +152,7 @@ export const works = [
     idProjects: 11,
     title: 'Anime Gallery Jujutsu Kaisen (Fanmade)',
     imgUrl: WebImage11,
-    tech: ["REACT", "TAILWIND CSS", "NODE JS", "VITE JS", "FIGMA"],
+    tech: ["REACT", "TAILWIND CSS",   "FIGMA"],
     githubUrl: "https://github.com/ikhsandwisaputra/anime-web",
     webUrl: "https://ikhsandwisaputra.github.io/anime-web/",
     duration: "400",
@@ -162,6 +176,161 @@ export const works = [
     duration: "400",
     category: 'Design UI/UX',
   },
+{
+    id: 14,
+    idProjects: 14,
+    title: 'Dashboard Analisis Penjualan',
+    imgUrl: WebImage14,
+    tech: ["REACT", "TYPESCRIPT", "TAILWIND CSS", "CHART JS"],
+    githubUrl: "https://github.com/ikhsandwisaputra/dashboard-analisis-penjualan",
+  webUrl: "https://ikhsandwisaputra.github.io/dashboard-analisis-penjualan/#/dashboard",
+    duration: "400",
+    category: 'Web Application',
+},
+{
+  id: 15,
+  idProjects: 15,
+  title: 'Dashboard Rumah Sakit',
+  imgUrl: WebImage15,
+tech: ["REACT", "TAILWIND CSS", "TYPESCRIPT", "NESTJS", "MONGODB"],
+  githubUrl: "https://github.com/ikhsandwisaputra/dashboard-rumah-sakit",
+  webUrl: "https://ikhsandwisaputra.github.io/dashboard-rumah-sakit/",
+  duration: "400",
+  category: 'Web Application',
+},
+{
+  id: 16,
+  idProjects: 16,
+  title: 'Rain Apps - Aplikasi Cuaca',
+  imgUrl: WebImage16,
+  tech: ["REACT", "TYPESCRIPT", "TAILWIND CSS", "OPENWEATHER API"],
+  githubUrl: "https://github.com/ikhsandwisaputra/rainy-apps",
+  webUrl: "https://ikhsandwisaputra.github.io/rainy-apps/",
+  duration: "400",
+  category: 'Web Application',
+},
+{
+  id: 17,
+  idProjects: 17,
+  title: 'Shoes Commerce Website',
+  imgUrl: WebImage17,
+  tech: ["REACT", "TYPESCRIPT", "TAILWIND CSS", "FIREBASE", "REDUX", "STRIPE API"],
+  githubUrl: "https://github.com/ikhsandwisaputra/shoes-commerce",
+  webUrl: "https://ikhsandwisaputra.github.io/shoes-commerce/",
+  duration: "400",
+  category: 'Web Application',
+},
+{
+  id: 18,
+  idProjects: 18,
+  title: 'Yu Chat Apps',
+  imgUrl: WebImage18,
+  tech: ["REACT", "TYPESCRIPT", "TAILWIND CSS", "SOCKET.IO", "FIREBASE", ],
+  githubUrl: "https://github.com/ikhsandwisaputra/yu-chat",
+  webUrl: "https://ikhsandwisaputra.github.io/yu-chat/",
+  duration: "400",
+  category: 'Web Application',
+},
+{
+  id: 19,
+  idProjects: 19,
+  title: 'Website NFT',
+  imgUrl: WebImage19,
+  tech: ["ANGULAR", "TAILWIND CSS"],
+  githubUrl: "https://github.com/ikhsandwisaputra/nft-website",
+  webUrl: "https://ikhsandwisaputra.github.io/nft-website/",
+  duration: "400",
+  category: 'Web Application',
+},
+{
+  id: 20,
+  idProjects: 20,
+  title: 'Jersey Commerce',
+  imgUrl: WebImage20,
+  tech: ["VUE", "TYPESCRIPT", "TAILWIND CSS", "NESTJS", "MYSQL", "PRISMA", "PINIA"],
+  githubUrl: "https://github.com/ikhsandwisaputra/vue-commerce",
+ 
+  duration: "400",
+  category: 'Web Application',
+},
+{
+  id: 21,
+  idProjects: 21,
+  title: 'React Supabase Project',
+  imgUrl: WebImage21,
+  tech: ["REACT", "TYPESCRIPT", "TAILWIND CSS", ],
+  githubUrl: "https://github.com/ikhsandwisaputra/website-kopi",
+  webUrl: "https://ikhsandwisaputra.github.io/website-kopi",
+  duration: "400",
+  category: 'Web Application',
+},
+{
+  id: 22,
+  idProjects: 22,
+  title: 'Website Botani',
+  imgUrl: WebImage22,
+  tech: ["NEXT.JS", "TYPESCRIPT", "REACT", "TAILWIND CSS"],
+  githubUrl: "https://github.com/ikhsandwisaputra/website-botani",
+  webUrl: "",
+  duration: "400",
+  category: 'Web Application',
+},
+{
+  id: 23,
+  idProjects: 23,
+  title: 'Chatbot VCare',
+  imgUrl: WebImage23,
+  tech: ["FLASK", "SUPABASE", "OPENAI API", "SERP API", "PYTHON"],
+  githubUrl: "https://github.com/ikhsandwisaputra/chatbot-pyhton-rule-based",
+  webUrl: "",
+  duration: "400",
+  category: 'Web Application',
+},
+{
+  id: 24,
+  idProjects: 24,
+  title: 'Dashboard Kelola Siswa',
+  imgUrl: WebImage24,
+  tech: ["LARAVEL 12", "LIVEWIRE", "MYSQL", "TAILWIND CSS"],
+  githubUrl: "",
+  webUrl: "",
+  duration: "400",
+  category: 'Web Application',
+},
+{
+  id: 25,
+  idProjects: 25,
+  title: 'Aplikasi Web Pengelola Password',
+  imgUrl: WebImage25,
+  tech: ["LARAVEL 12", "VUE.JS", "TAILWIND CSS", "MYSQL"],
+  githubUrl: "",
+  webUrl: "",
+  duration: "400",
+  category: 'Web Application',
+},
+{
+  id: 26,
+  idProjects: 26,
+  title: 'Website Desa Mulya Subur',
+  imgUrl: WebImage26,
+  tech: ["LARAVEL 12", "REACT", "TYPESCRIPT", "TAILWIND CSS", "MYSQL"],
+  githubUrl: "",
+  webUrl: "",
+  duration: "400",
+  category: 'Web Application',
+}
+
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 // Array of experience objects

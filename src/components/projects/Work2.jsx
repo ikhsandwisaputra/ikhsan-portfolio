@@ -22,17 +22,13 @@ const Work2 = () => {
      const [selectedCategory, setSelectedCategory] = useState(''); // New state for selected category
      const [selectedTech, setSelectedTech] = useState('REACT');
    
-     const [categorySearch, setCategorySearch] = useState('');
+  
    const [techSearch, setTechSearch] = useState('');
    const [isOpen, setIsOpen] = useState(false);
    const uniqueCategories = [...new Set(works.map((work) => work.category))];
    const uniqueTechs = [...new Set(works.flatMap((work) => work.tech))];
    
-   // Filter daftar OPSI dropdown berdasarkan input pencarian
-   const filteredUniqueCategories = uniqueCategories.filter((category) =>
-     category.toLowerCase().includes(categorySearch.toLowerCase())
-   );
-   
+  
    const filteredUniqueTechs = uniqueTechs.filter((tech) =>
      tech.toLowerCase().includes(techSearch.toLowerCase())
    );
@@ -71,7 +67,7 @@ const Work2 = () => {
   </>
 ): (
   <>
-  <div className='flex justify-between items-center flex-wrap my-10 sm:flex-row flex-col gap-2'>
+  <div className='flex justify-between items-center flex-wrap sm:flex-row flex-col my-10  gap-2'>
             <div className='flex justify-between gap-2 items-center'>
                      <FiSearch className='text-ternary-dark dark:text-ternary-light w-5 h-5'></FiSearch>
                      <input
@@ -95,7 +91,7 @@ const Work2 = () => {
                        onChange={(e) => setSearchTerm(e.target.value)}
                      />
                    </div>
-          <div className='flex gap-4'>
+          <div className='flex flex-col sm:flex-row gap-4'>
  
           <div>
                    <select
@@ -147,7 +143,8 @@ const Work2 = () => {
                    placeholder="Cari teknologi..."
                    value={techSearch}
                    onChange={(e) => setTechSearch(e.target.value)}
-                   className="w-full px-3 py-2 border rounded-md text-sm"
+                    className="w-full px-3 py-2 border rounded-md text-sm  text-primary-dark
+                    dark:text-ternary-dark"
                  />
                </div>
          
@@ -195,7 +192,10 @@ const Work2 = () => {
 
         <div className='max-w-[1000px] w-full grid sm:grid-cols-3 sm:gap-8 gap-1 sm:px-4 px-3 mt-7'>
           {/* Map over the filtered projects */}
-          {filteredWorks.map((work) => (
+          {filteredWorks
+            .slice()
+            .sort((a, b) => b.id - a.id)
+            .map((work) => (
             <Link
               to={`/projects/${work.idProjects}`}
               aria-label={`Detail ${work.title}`}

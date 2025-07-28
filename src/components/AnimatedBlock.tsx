@@ -8,7 +8,7 @@ const logos = [
 ];
 
   return (
-    <div className=" relative lg:scale-[5] scale-[3] h-[50px] w-[40px]">
+    <div className=" relative lg:scale-[3] scale-[2] h-[40px] w-[30px] ">
 {logos.map((logo, i) => (
   <div key={i} className={`box box-${i + 1} relative opacity-0 left-[10px]`}>
     <div className="side-left absolute bg-gradient-to-r from-blue-600 to-green-500  w-[19px] h-[5px] skew-y-[-25deg] top-[14px] left-[10px]"></div>

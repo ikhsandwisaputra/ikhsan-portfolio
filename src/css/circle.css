@@ -4,8 +4,8 @@
   top: 50%;
   left: 50%;
   border-radius: 9999px;
-  height: 220px;
-  width: 220px;
+  height: 200px;
+  width: 200px;
   animation: rotate_3922 1.2s linear infinite;
   background-color: #CB0000;
 background-image: linear-gradient(to right, #2563eb, #22c55e); 
@@ -23,23 +23,23 @@ background-image: linear-gradient(to right, #2563eb, #22c55e);
 /* RESPONSIVE - Mirip Tailwind */
 @media (min-width: 640px) { /* sm: */
   .blur-loader-container {
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     background-color: red;
   }
 }
 
 @media (min-width: 768px) { /* md: */
   .blur-loader-container {
-    width: 270px;
-    height: 270px;
+    width: 240px;
+    height: 240px;
   }
 }
 
 @media (min-width: 1024px) { /* lg: */
   .blur-loader-container {
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
   }
 }
 

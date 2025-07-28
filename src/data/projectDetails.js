@@ -1,14 +1,8 @@
-import WebImage1 from '../images/my-project/COFFEE-LANDING-PAGE.png';
 import WebImage2 from '../images/my-project/Personal-web.png';
 import WebImage3 from '../images/my-project/SIES.png';
 import WebImage4 from '../images/my-project/sidoc.png';
 import WebImage5 from '../../src/images/DETAIL-PROJECT/kopi-2.png';
-import WebImage6 from '../images/my-project/quran.png';
-import WebImage7 from '../images/my-project/talenta.png';
-import WebImage8 from '../images/my-project/bali.png';
-import WebImage9 from '../images/my-project/lol.png';
-import WebImage10 from '../images/my-project/shoes.png';
-import WebImage11 from '../images/my-project/anime.png';
+
 
 import kopi1 from '../images/DETAIL-PROJECT/kopi-1.png';
 import kopi2 from '../images/DETAIL-PROJECT/kopi-2.png';
@@ -68,6 +62,66 @@ import  makan3 from '../images/DETAIL-PROJECT/makan-3.png';
 import  makan4 from '../images/DETAIL-PROJECT/makan-4.png';
 
 
+import dashjualan1 from '../images/my-project/dashboard-analisis-penjualan/image-1.png';
+import dashjualan2 from '../images/my-project/dashboard-analisis-penjualan/image-2.png';
+import dashjualan3 from '../images/my-project/dashboard-analisis-penjualan/image-3.png';
+import dashjualan4 from '../images/my-project/dashboard-analisis-penjualan/image-4.png';
+
+import rain1 from '../images/my-project/rain-apps/image-1.png';
+
+import hospital1 from '../images/my-project/dashboard-rumah-sakit/image-1.png';
+import hospital2 from '../images/my-project/dashboard-rumah-sakit/image-2.png';
+import hospital3 from '../images/my-project/dashboard-rumah-sakit/image-3.png';
+import hospital4 from '../images/my-project/dashboard-rumah-sakit/image-4.png';
+
+import shoess1 from '../images/my-project/shoes-commerce/image-1.png';
+import shoess2 from '../images/my-project/shoes-commerce/image-2.png';
+import shoess3 from '../images/my-project/shoes-commerce/image-3.png';
+
+// Import Images
+import yuchat1 from '../images/my-project/yu-chat/image-1.png';
+import yuchat2 from '../images/my-project/yu-chat/image-2.png';
+import yuchat3 from '../images/my-project/yu-chat/image-3.png';
+import yuchat4 from '../images/my-project/yu-chat/image-4.png';
+
+import nft1 from '../images/my-project/nft-web/image-1.png';
+import nft2 from '../images/my-project/nft-web/image-2.png';
+import nft3 from '../images/my-project/nft-web/image-3.png';
+
+import jersey1 from '../images/my-project/jersey-commerce/image-1.png';
+import jersey2 from '../images/my-project/jersey-commerce/image-2.png';
+import jersey3 from '../images/my-project/jersey-commerce/image-3.png';
+import jersey4 from '../images/my-project/jersey-commerce/image-4.png';
+import jersey5 from '../images/my-project/jersey-commerce/image-5.png';
+
+import supabase1 from '../images/my-project/web-kopi/image-1.png';
+import supabase2 from '../images/my-project/web-kopi/image-2.png';
+import supabase3 from '../images/my-project/web-kopi/image-3.png';
+
+import botani1 from '../images/my-project/website-botani/image-1.png';
+import botani2 from '../images/my-project/website-botani/image-2.png';
+import botani3 from '../images/my-project/website-botani/image-3.png';
+
+import vcare1 from '../images/my-project/chatbot-vcare/image-1.png';
+import vcare2 from '../images/my-project/chatbot-vcare/image-2.png';
+import vcare3 from '../images/my-project/chatbot-vcare/image-3.png';
+
+import siswa1 from '../images/my-project/dashboard-sekolah/image-1.png';
+import siswa2 from '../images/my-project/dashboard-sekolah/image-2.png';
+import siswa3 from '../images/my-project/dashboard-sekolah/image-3.png';
+import siswa4 from '../images/my-project/dashboard-sekolah/image-4.png';
+
+import pass1 from '../images/my-project/passwordku-apps/image-1.png';
+import pass2 from '../images/my-project/passwordku-apps/image-2.png';
+import pass3 from '../images/my-project/passwordku-apps/image-3.png';
+import pass4 from '../images/my-project/passwordku-apps/image-4.png';
+
+import desa1 from '../images/my-project/web-desa/image-1.png';
+import desa2 from '../images/my-project/web-desa/image-2.png';
+import desa3 from '../images/my-project/web-desa/image-3.png';
+import desa4 from '../images/my-project/web-desa/image-4.png';
+import desa5 from '../images/my-project/web-desa/image-4.png';
+import desa6 from '../images/my-project/web-desa/image-4.png';
 const projectDetails = {
   1: {
     id: 1,
@@ -418,7 +472,7 @@ const projectDetails = {
       Technologies: [
         {
           title: 'Tools & Technologies',
-          techs: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP 5", "PHP", "API CLOUD", "MYSQL", "DOCKER", "FIGMA"],
+          techs: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP 5", "PHP",  "MYSQL", "DOCKER", "FIGMA"],
         },
       ],
       Demo: [
@@ -546,7 +600,7 @@ const projectDetails = {
       Technologies: [
         {
           title: 'Tools & Technologies',
-          techs: ["REACT", "TAILWIND CSS", "NODE JS", "VITE JS", "FIGMA"],
+          techs: ["REACT", "TAILWIND CSS",  "VITE JS", "FIGMA"],
         },
       ],
       Demo: [
@@ -609,7 +663,7 @@ const projectDetails = {
       Technologies: [
         {
           title: 'Tools & Technologies',
-          techs: ["HTML", "CSS", "JAVASCRIPT", "REACT", "TAILWIND CSS", "NODE JS", "VITE JS", "FIGMA"],
+          techs: ["HTML", "CSS", "JAVASCRIPT", "REACT", "TAILWIND CSS",  "VITE JS", "FIGMA"],
         },
       ],
       Demo: [
@@ -672,7 +726,7 @@ const projectDetails = {
       Technologies: [
         {
           title: 'Tools & Technologies',
-          techs: ["HTML", "CSS", "JAVASCRIPT", "REACT", "TAILWIND CSS", "NODE JS", "VITE JS", "FIGMA"],
+          techs: ["HTML", "CSS", "JAVASCRIPT", "REACT", "TAILWIND CSS",  "VITE JS", "FIGMA"],
         },
       ],
       Demo: [
@@ -736,7 +790,7 @@ const projectDetails = {
       Technologies: [
         {
           title: 'Tools & Technologies',
-          techs: ["HTML", "CSS", "JAVASCRIPT", "REACT", "TAILWIND CSS", "NODE JS", "VITE JS", "FIGMA"],
+          techs: ["HTML", "CSS", "JAVASCRIPT", "REACT", "TAILWIND CSS",  "VITE JS", "FIGMA"],
         },
       ],
       Demo: [
@@ -910,6 +964,781 @@ const projectDetails = {
       },
     },
   },
+  14: {
+    id: 14,
+    title: 'Dashboard Analisis Penjualan',
+    publishDate: 'Jan 2, 2025',
+    tags: 'Web Application',
+    ProjectInfo: {
+      Images: [
+        {
+          img1: dashjualan1,
+          img2: dashjualan2,
+          img3: dashjualan3,
+          img4: dashjualan4,
+        },
+      ],
+      Technologies: [
+        {
+          title: 'Tools & Technologies',
+          techs: ["REACT", "TYPESCRIPT", "TAILWINDCSS", "CHART JS"],
+        },
+      ],
+      Demo: [
+        {
+         githubUrl: "https://github.com/ikhsandwisaputra/dashboard-analisis-penjualan",
+  webUrl: "https://ikhsandwisaputra.github.io/dashboard-analisis-penjualan/#/dashboard",
+        },
+      ],
+      ProjectDetailsHeading: 'Description',
+      ProjectDetails: [
+        {
+          id: 14,
+          details:
+            'Proyek dashboard ini dibangun menggunakan React dan TypeScript sebagai antarmuka statis untuk bereksperimen dengan library Chart.js dan mengimplementasikan desain mode gelap yang bersih dan modern. Ini menyediakan pengalaman visualisasi data yang menarik dan modern untuk analitik penjualan.',
+        },
+      ],
+      RelatedProject: {
+        title: 'Related Projects',
+        Projects: [],
+      },
+    },
+},
+15: {
+  id: 15,
+  title: 'Dashboard Rumah Sakit',
+  publishDate: 'Jul 28, 2025',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: hospital1,
+        img2: hospital2,
+        img3: hospital3,
+        img4: hospital4,
+      },
+    ],
+     Technologies: [
+        {
+          title: 'Tools & Technologies',
+          techs: ["REACT", "TYPESCRIPT", "TAILWINDCSS", "CHART JS"],
+        },
+      ],
+    Demo: [
+      {
+       githubUrl: "https://github.com/ikhsandwisaputra/dashboard-rumah-sakit",
+  webUrl: "https://ikhsandwisaputra.github.io/dashboard-rumah-sakit/",
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 15,
+        details:
+          'Dashboard rumah sakit ini dikembangkan sebagai prototipe rancangan awal desain UI dengan tujuan menyediakan sistem manajemen informasi yang efisien untuk lingkungan rumah sakit. Aplikasi ini dibangun menggunakan React, Tailwind CSS, dan TypeScript pada sisi frontend, serta REST API berbasis NestJS di sisi backend dengan MongoDB sebagai database. Fitur CRUD telah diimplementasikan secara lengkap, sementara beberapa fitur tambahan masih dalam tahap pengembangan.',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+16: {
+  id: 16,
+  title: 'Rain Apps - Aplikasi Cuaca',
+  publishDate: 'Jul 28, 2025',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: rain1,       
+      },
+    ],
+    Technologies: [
+      {
+        title: 'Tools & Technologies',
+        techs: ["REACT", "TYPESCRIPT", "TAILWIND CSS", "OPENWEATHER API"],
+      },
+    ],
+    Demo: [
+      {
+         githubUrl: "https://github.com/ikhsandwisaputra/rainy-apps",
+  webUrl: "https://ikhsandwisaputra.github.io/rainy-apps/",
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 16,
+        details:
+          'Rain Apps adalah aplikasi web sederhana yang menampilkan informasi cuaca di kota Pekanbaru. Aplikasi ini dibangun menggunakan React, TypeScript, dan Tailwind CSS dengan integrasi API dari OpenWeather sebagai sumber data. Proyek ini dirancang untuk memahami implementasi dan pengolahan data dari API cuaca secara efektif.',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+17: {
+  id: 17,
+  title: 'Shoes Commerce Website',
+  publishDate: 'Jul 28, 2025',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: shoess1,
+        img2: shoess2,
+        img3: shoess3,
+       
+      },
+    ],
+    Technologies: [
+      {
+        title: 'Tools & Technologies',
+        techs: ["REACT", "TYPESCRIPT", "TAILWIND CSS", "FIREBASE", "REDUX", "STRIPE API"],
+      },
+    ],
+    Demo: [
+      {
+       githubUrl: "https://github.com/ikhsandwisaputra/shoes-commerce",
+  webUrl: "https://ikhsandwisaputra.github.io/shoes-commerce/",
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 17,
+        details:
+          'Shoes Commerce Website adalah aplikasi web e-commerce penjualan sepatu yang dikembangkan menggunakan React, TypeScript, dan Tailwind CSS. Aplikasi ini dilengkapi dengan autentikasi menggunakan Firebase, pengolahan data produk berbasis Firebase, serta fitur keranjang belanja yang terintegrasi dengan Redux untuk manajemen state. Proses checkout memanfaatkan API Stripe, meskipun implementasinya masih dalam tahap penyempurnaan. Proyek ini dirancang sebagai pembelajaran mendalam terkait integrasi berbagai layanan modern untuk pengembangan e-commerce.',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+18: {
+  id: 18,
+  title: 'Yu Chat Apps',
+  publishDate: 'Jul 28, 2025',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: yuchat1,
+        img2: yuchat2,
+        img3: yuchat3,
+        img4: yuchat4,
+      },
+    ],
+    Technologies: [
+      {
+        title: 'Tools & Technologies',
+        techs: ["REACT", "TYPESCRIPT", "TAILWIND CSS", "SOCKET.IO", "FIREBASE", "RAILWAY"],
+      },
+    ],
+    Demo: [
+      {
+        githubUrl: "https://github.com/ikhsandwisaputra/yu-chat",
+  webUrl: "https://ikhsandwisaputra.github.io/yu-chat/",
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 18,
+        details:
+          'Yu Chat Apps adalah aplikasi web chatting real-time yang dibangun menggunakan React, TypeScript, dan Tailwind CSS. Sistem ini memanfaatkan Socket.IO untuk komunikasi real-time dan Firebase untuk autentikasi pengguna, dengan deployment dilakukan melalui Railway. Proyek ini dirancang untuk mengeksplorasi pembuatan aplikasi chat modern yang cepat, aman, dan mudah diakses secara online.',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+19: {
+  id: 19,
+  title: 'Website NFT',
+  publishDate: 'Jul 28, 2025',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: nft1,
+        img2: nft2,
+        img3: nft3,
+        
+      },
+    ],
+    Technologies: [
+      {
+        title: 'Tools & Technologies',
+        techs: ["ANGULAR", "TAILWIND CSS"],
+      },
+    ],
+    Demo: [
+      {
+  githubUrl: "https://github.com/ikhsandwisaputra/nft-website",
+  webUrl: "https://ikhsandwisaputra.github.io/nft-website/",
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 19,
+        details:
+          'Website NFT ini terinspirasi dari desain koleksi NFT di Pinterest yang memunculkan rasa penasaran untuk mencoba membuatnya. Aplikasi ini dikembangkan menggunakan Angular dan Tailwind CSS dengan fokus pada penerapan desain grid responsif dan tampilan antarmuka yang menarik. Proyek ini dibuat sebagai sarana eksplorasi untuk memahami pengembangan web modern dengan Angular dan memperdalam pemanfaatan Tailwind CSS dalam membangun UI yang cepat, responsif, dan efisien.',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+20: {
+  id: 20,
+  title: 'Jersey Commerce',
+  publishDate: 'Jul 28, 2025',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: jersey1,
+        img2: jersey2,
+        img3: jersey3,
+        img4: jersey4,
+        img5: jersey5,
+      },
+    ],
+    Technologies: [
+      {
+        title: 'Tools & Technologies',
+        techs: ["VUE", "TYPESCRIPT", "TAILWIND CSS", "NESTJS", "MYSQL", "PRISMA", "PINIA"],
+      },
+    ],
+    Demo: [
+      {
+         githubUrl: "https://github.com/ikhsandwisaputra/vue-commerce",
+ 
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 20,
+        details:
+          'Jersey Commerce adalah aplikasi web e-commerce untuk penjualan jersey berbagai klub sepak bola. Aplikasi ini dibangun menggunakan Vue, TypeScript, dan Tailwind CSS pada sisi frontend, serta REST API berbasis NestJS dengan MySQL sebagai database menggunakan ORM Prisma di sisi backend. Manajemen state dilakukan dengan Pinia untuk memastikan pengelolaan data yang efisien. Proyek ini menjadi sarana eksplorasi integrasi antara frontend dan backend modern, serta penerapan praktik terbaik dalam pengembangan aplikasi e-commerce.',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+21: {
+  id: 21,
+  title: 'React Supabase Project',
+  publishDate: 'Jul 28, 2025',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: supabase1,
+        img2: supabase2,
+        img3: supabase3,
+      },
+    ],
+    Technologies: [
+      {
+        title: 'Tools & Technologies',
+        techs: ["REACT", "TYPESCRIPT", "TAILWIND CSS", "SUPABASE"],
+      },
+    ],
+    Demo: [
+      {
+       githubUrl: "https://github.com/ikhsandwisaputra/website-kopi",
+  webUrl: "https://ikhsandwisaputra.github.io/website-kopi",
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 21,
+        details:
+          'Proyek ini merupakan aplikasi web yang dikembangkan menggunakan React, TypeScript, dan Tailwind CSS. Aplikasi ini terintegrasi dengan Supabase sebagai backend-as-a-service, yang digunakan untuk mengelola database serta autentikasi pengguna. Proyek ini bertujuan untuk mengeksplorasi pemanfaatan Supabase dalam pengembangan aplikasi modern dengan integrasi data real-time.',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+22: {
+  id: 22,
+  title: 'Website Botani',
+  publishDate: 'Jul 28, 2025',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: botani1,
+        img2: botani2,
+        img3: botani3,
+        
+      },
+    ],
+    Technologies: [
+      {
+        title: 'Tools & Technologies',
+        techs: ["NEXT.JS", "TYPESCRIPT", "TAILWIND CSS"],
+      },
+    ],
+    Demo: [
+      {
+        githubUrl: "https://github.com/ikhsandwisaputra/website-botani",
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 22,
+        details:
+          'Website Botani ini merupakan rancangan frontend yang terinspirasi dari desain Pinterest. Proyek ini dikembangkan menggunakan Next.js, TypeScript, dan Tailwind CSS, serta hanya bersifat statis untuk menampilkan antarmuka pengguna tanpa integrasi backend. Tujuan utama dari proyek ini adalah mengeksplorasi pembuatan layout modern, responsif, dan menarik dengan memanfaatkan ekosistem Next.js.',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+23: {
+  id: 23,
+  title: 'Chatbot VCare',
+  publishDate: 'Jul 28, 2025',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: vcare1,
+        img2: vcare2,
+        img3: vcare3,
+        
+      },
+    ],
+    Technologies: [
+      {
+        title: 'Tools & Technologies',
+        techs: ["FLASK", "SUPABASE", "OPENAI API", "SERP API", "PYTHON"],
+      },
+    ],
+    Demo: [
+      {
+        // webUrl: '',
+        // youtubeUrl: '',
+        githubUrl: 'https://github.com/ikhsandwisaputra/chatbot-pyhton-rule-based',
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 23,
+        details:
+          'Chatbot VCare adalah chatbot yang dikembangkan untuk memberikan diagnosis awal penyakit gastritis dengan pendekatan hybrid rules. Aplikasi ini dibangun menggunakan Flask sebagai backend, Supabase sebagai database, dan terintegrasi dengan API OpenAI untuk pemrosesan bahasa alami. Selain itu, digunakan juga SERP API untuk mengambil data lokasi yang relevan. Proyek ini dirancang sebagai pembelajaran dalam pengembangan aplikasi berbasis Python dengan pemanfaatan berbagai layanan API modern.',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+24: {
+  id: 24,
+  title: 'Dashboard Kelola Siswa',
+  publishDate: 'Jul 28, 2025',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: siswa1,
+        img2: siswa2,
+        img3: siswa3,
+        img4: siswa4,
+      },
+    ],
+    Technologies: [
+      {
+        title: 'Tools & Technologies',
+        techs: ["LARAVEL 12", "LIVEWIRE", "MYSQL", "TAILWIND CSS"],
+      },
+    ],
+    Demo: [
+      {
+        // webUrl: '',
+        // youtubeUrl: '',
+        // githubUrl: '',
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 24,
+        details:
+          'Dashboard Kelola Siswa adalah aplikasi web berbasis Laravel 12 dengan integrasi Livewire untuk menghadirkan interaksi dinamis tanpa memerlukan banyak JavaScript. Aplikasi ini menggunakan MySQL sebagai database utama dan Tailwind CSS untuk tampilan antarmuka yang modern. Proyek ini memanfaatkan template bawaan dari fitur autentikasi Laravel, memungkinkan pengelolaan pengguna serta sistem login dan registrasi dilakukan dengan cepat dan efisien.',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+25: {
+  id: 25,
+  title: 'Aplikasi Web Pengelola Password',
+  publishDate: 'Jul 28, 2025',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: pass1,
+        img2: pass2,
+        img3: pass3,
+        img4: pass4,
+      },
+    ],
+    Technologies: [
+      {
+        title: 'Tools & Technologies',
+        techs: ["LARAVEL 12", "VUE.JS", "TAILWIND CSS", "MYSQL"],
+      },
+    ],
+    Demo: [
+      {
+        // webUrl: '',
+        // youtubeUrl: '',
+        // githubUrl: '',
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 25,
+        details:
+          'Aplikasi Web Pengelola Password adalah sistem manajemen password berbasis web yang dikembangkan menggunakan Laravel 12 untuk backend, Vue.js untuk frontend interaktif, serta Tailwind CSS untuk desain antarmuka modern. Sistem ini menggunakan MySQL sebagai database untuk penyimpanan data sensitif. Proyek ini dibuat sebagai sarana pembelajaran integrasi Laravel dan Vue dalam pengembangan aplikasi web full-stack, sekaligus memperdalam pemahaman terkait pengelolaan data dengan standar keamanan dasar.',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+26: {
+  id: 26,
+  title: 'Website Desa Mulya Subur',
+  publishDate: 'Jul 28, 2025',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: desa1,
+        img2: desa2,
+        img3: desa3,
+        img4: desa4,
+        img5: desa5,
+        img6: desa6,
+      },
+    ],
+    Technologies: [
+      {
+        title: 'Tools & Technologies',
+        techs: ["LARAVEL 12", "REACT", "TYPESCRIPT", "TAILWIND CSS", "MYSQL"],
+      },
+    ],
+    Demo: [
+      {
+        // webUrl: '',
+        // youtubeUrl: '',
+        // githubUrl: '',
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 26,
+        details:
+          'Website Desa Mulya Subur adalah proyek pengembangan web yang dibuat selama program Kuliah Kerja Nyata (KKN). Aplikasi ini menggunakan Laravel 12 sebagai backend, React dengan TypeScript sebagai frontend, dan Tailwind CSS untuk tampilan antarmuka yang modern serta responsif. MySQL digunakan sebagai database utama untuk mengelola data. Proyek ini dirancang untuk membantu digitalisasi profil desa, penyebaran informasi, dan pengelolaan data layanan masyarakat, serta memperdalam pemahaman pengembangan aplikasi full-stack dengan integrasi Laravel dan React.',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+
   // tambahkan detail proyek lainnya
 };
 
