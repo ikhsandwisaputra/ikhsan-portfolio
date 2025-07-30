@@ -72,36 +72,37 @@ const About = () => {
           </div>
 
           <div className='flex flex-col justify-center'>
-            <p className='text-xl font-bold pb-2 text-ternary-dark dark:text-ternary-light text-start'>
-              Hi there! Nice to meet you.
-            </p>
-            <div className='text-lg leading-7 text-ternary-dark dark:text-ternary-light'>
-              <span className='highlight-container opacity-0 hidden'>
-                <span className='highlight-text'></span>
-              </span>
-              i'm a full stack developer with{''}{' '}
-              <span className='highlight-container'>
-                <span className='highlight-text'>3 years of experience</span>
-              </span>
-              and I am also a technology enthusiast. I love{' '}
-              <span className='highlight-container'>
-                <span className='highlight-text'>web development</span>
-              </span>
-              technology so much that it requires me to keep learning. If you
-              are looking for reliable and innovative web development solutions,
-              I am here to
-              <span className='highlight-container w-fit'>
-                <span className='highlight-text text-lg leading-7 text-ternary-dark dark:text-ternary-light'>
-                  help and look
-                </span>
-              </span>
-              forward to working with you on
-              <span className='highlight-container w-fit'>
-                <span className='highlight-text text-lg leading-7 text-ternary-dark dark:text-ternary-light'>
-                  future projects.
-                </span>
-              </span>
-            </div>
+           <p className='text-xl font-bold pb-2 text-ternary-dark dark:text-ternary-light text-start'>
+  Hi there! Nice to meet you.
+</p>
+<div className='text-lg leading-7 text-ternary-dark dark:text-ternary-light'>
+  <span className='highlight-container opacity-0 hidden'>
+    <span className='highlight-text'></span>
+  </span>
+  I'm a passionate full stack developer with{''}{' '}
+  <span className='highlight-container'>
+    <span className='highlight-text'>3 years of experience</span>
+  </span>
+  in building modern, efficient, and user-friendly web applications. I am a
+  lifelong learner and{' '}
+  <span className='highlight-container'>
+    <span className='highlight-text'>technology enthusiast</span>
+  </span>
+  who enjoys turning ideas into impactful solutions. I’m excited to bring my
+  skills, creativity, and dedication to{' '}
+  <span className='highlight-container w-fit'>
+    <span className='highlight-text text-lg leading-7 text-ternary-dark dark:text-ternary-light'>
+      contribute and grow
+    </span>
+  </span>
+  within a collaborative team on{' '}
+  <span className='highlight-container w-fit'>
+    <span className='highlight-text text-lg leading-7 text-ternary-dark dark:text-ternary-light'>
+      future opportunities.
+    </span>
+  </span>
+</div>
+
 
             <div className='mt-4 mx-auto'>
               <button
