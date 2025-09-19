@@ -1,0 +1,69 @@
+/* Heartloaderr.css */
+
+.loaderr {
+  font-family: 'proxima-nova', sans-serif;
+  background-image: linear-gradient(90deg, #3b82f6 0%, #22c55e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+}
+
+.loaderr::before,
+.loaderr::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #22c55e;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+  margin: 1rem auto;
+}
+
+.Particle_heart {
+  position: absolute;
+  font-size: 1.5rem;
+  color: #22c55e;
+  opacity: 0;
+  animation: floatHeart 5s linear infinite;
+}
+
+.Particle_heart:nth-child(2) {
+  left: 10%;
+  animation-delay: 0.5s;
+}
+
+.Particle_heart:nth-child(3) {
+  left: 30%;
+  animation-delay: 2.5s;
+}
+
+.Particle_heart:nth-child(4) {
+  left: 50%;
+  animation-delay: 1.5s;
+}
+
+.Particle_heart:nth-child(5) {
+  left: 70%;
+  animation-delay: 1s;
+}
+
+@keyframes floatHeart {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-100px) translateX(30px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-150px) translateX(60px);
+    opacity: 0;
+  }
+}

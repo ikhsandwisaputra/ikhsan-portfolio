@@ -1,0 +1,35 @@
+/* Tambahkan animasi untuk melambai */
+@keyframes waveAnimation {
+  0%, 25%, 50%, 75%, 100% {
+    transform: rotate(0deg);
+  }
+  12.5% {
+    transform: rotate(-15deg);
+  }
+  37.5% {
+    transform: rotate(15deg);
+  }
+  62.5% {
+    transform: rotate(-15deg);
+  }
+  87.5% {
+    transform: rotate(15deg);
+  }
+}
+
+/* Tambahkan gaya untuk emoji dan teks */
+.waving-hand {
+  display: inline-block;
+  animation: waveAnimation 1.5s 4; /* 4 kali pengulangan */
+}
+
+/* Tambahkan gaya tambahan untuk teks */
+.wave-text {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+/* Animasi ketika di hover */
+.waving-hand:hover {
+  animation: waveAnimation 1.5s 4;
+}
