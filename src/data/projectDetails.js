@@ -131,6 +131,12 @@ import lol from '../images/my-project/lol-hero/image.png';
   import sbiSystem4 from '../images/my-project/sbi/image-4.png';
 
 
+  import pAi1 from '../images/my-project/poetry-ai/pi-1.png';
+  import pAi2 from '../images/my-project/poetry-ai/pi-2.png';
+  import pAi3 from '../images/my-project/poetry-ai/pi-3.png';
+  
+
+
 const projectDetails = {
   1: {
     id: 1,
@@ -1838,6 +1844,66 @@ const projectDetails = {
         id: 28,
         details:
           'SBI Monitoring System adalah aplikasi berbasis Next.js yang dirancang untuk memantau aktivitas akademik siswa secara real-time. Sistem ini memiliki dua jenis user utama Admin (Sekolah / Guru) → mengelola data siswa, laporan akademik, serta memantau perkembangan secara menyeluruh. Orang Tua (Ortu) → dapat login untuk melihat perkembangan anak, laporan nilai, kehadiran, serta informasi terbaru dari sekolah. Dengan sistem ini, komunikasi antara sekolah dan orang tua menjadi lebih transparan, cepat, dan efisien, sehingga perkembangan siswa dapat dipantau dengan lebih baik.',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+29: {
+  id: 29,
+  title: 'Poetry Ai',
+  publishDate: 'Sept 20, 2025',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: pAi1,
+        img2: pAi2,
+        img3: pAi3,        
+      },
+    ],
+    Technologies: [
+      {
+        title: 'Tools & Technologies',
+       techs: ["NEXT.JS", "TAILWINDCSS", "TYPESCRIPT", "FIREBASE"],
+      },
+    ],
+    Demo: [
+      {
+        webUrl: 'https://github.com/ikhsandwisaputra/poetry-ai',
+        githubUrl: 'https://poetry-ai-two.vercel.app/',
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 28,
+        details:
+          'Website Dengan integrasi ai open ai',
       },
     ],
     RelatedProject: {

@@ -44,6 +44,7 @@ import WebImage13 from '../images/my-project/nasi.png';
   import WebImage26 from '../images/my-project/web-desa/image-1.png';
   import WebImage27 from '../images/my-project/lol-hero/image.png';
   import WebImage28 from '../images/my-project/sbi/image-1.png';
+  import WebImage29 from '../images/my-project/poetry-ai/pi-1.png';
 
 
 
@@ -342,6 +343,17 @@ tech: ["REACT", "TAILWIND CSS", "TYPESCRIPT", "NESTJS", "MONGODB"],
   tech: ["NEXT.JS", "TAILWINDCSS", "TYPESCRIPT", "SQLITE"],
   githubUrl: "",
   webUrl: "",
+  duration: "400",
+  category: 'Web Application',
+},
+{
+    id: 29,
+  idProjects: 29,
+  title: 'Poetry Ai',
+  imgUrl: WebImage29,
+  tech: ["NEXT.JS", "TAILWINDCSS", "TYPESCRIPT", "FIREBASE"],
+  githubUrl: "https://github.com/ikhsandwisaputra/poetry-ai",
+  webUrl: "https://poetry-ai-two.vercel.app/",
   duration: "400",
   category: 'Web Application',
 }
