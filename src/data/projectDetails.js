@@ -134,7 +134,21 @@ import lol from '../images/my-project/lol-hero/image.png';
   import pAi1 from '../images/my-project/poetry-ai/pi-1.png';
   import pAi2 from '../images/my-project/poetry-ai/pi-2.png';
   import pAi3 from '../images/my-project/poetry-ai/pi-3.png';
-  
+
+  import ediglab1 from '../images/my-project/ediglab/screencapture-ediglab-2026-04-07-14_11_10.png';
+  import ediglab2 from '../images/my-project/ediglab/screencapture-ediglab-login-2026-04-07-14_11_43.png';
+  import ediglab3 from '../images/my-project/ediglab/screencapture-laboratorium-angkasa-raya-ediglab-workspace-2026-04-07-14_12_05.png';
+  import ediglab4 from '../images/my-project/ediglab/screencapture-laboratorium-angkasa-raya-ediglab-dashboard-2026-04-07-14_12_17.png';
+  import labum1 from '../images/my-project/labum/screencapture-lab-um-ac-id-2026-04-07-14_21_48.png';
+  import labum2 from '../images/my-project/labum/screencapture-lab-um-ac-id-layanan-2026-04-07-14_20_55.png';
+  import pandu1 from '../images/my-project/pandupramana/screencapture-pandupramana-2026-04-07-09_40_46.png';
+  import pandu2 from '../images/my-project/pandupramana/screencapture-pandupramana-pengajuan-sertifikasi-2026-04-07-09_41_27.png';
+  import pandu3 from '../images/my-project/pandupramana/screencapture-pandupramana-pilih-level-2026-04-07-09_41_48.png';
+  import pandu4 from '../images/my-project/pandupramana/screencapture-pandupramana-certification-status-2026-04-07-09_44_06.png';
+  import mbg1 from '../images/my-project/mbg/screencapture-localhost-5173-ikhsan-portfolio-2026-04-07-15_52_57.png';
+  import mbg2 from '../images/my-project/mbg/screencapture-localhost-5173-ikhsan-portfolio-2026-04-07-16_24_07.png';
+  import mbg3 from '../images/my-project/mbg/screencapture-localhost-5173-ikhsan-portfolio-2026-04-07-16_24_25.png';
+
 
 
 const projectDetails = {
@@ -1883,7 +1897,7 @@ const projectDetails = {
       {
         img1: pAi1,
         img2: pAi2,
-        img3: pAi3,        
+        img3: pAi3,
       },
     ],
     Technologies: [
@@ -1904,6 +1918,247 @@ const projectDetails = {
         id: 28,
         details:
           'Website Dengan integrasi ai open ai',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+30: {
+  id: 30,
+  title: 'Ediglab - LIMS & ERP',
+  publishDate: 'Apr 7, 2026',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: ediglab1,
+        img2: ediglab2,
+        img3: ediglab3,
+        img4: ediglab4,
+      },
+    ],
+    Technologies: [
+      {
+        title: 'Tools & Technologies',
+        techs: ["NEXT.JS", "TYPESCRIPT", "FASTAPI", "POSTGRESQL", "TAILWINDCSS", "AWS"],
+      },
+    ],
+    Demo: [
+      {
+        webUrl: 'https://ediglab.com/',
+        githubUrl: '',
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 30,
+        details:
+          'Ediglab adalah platform digital terintegrasi yang menggabungkan Laboratory Information Management System (LIMS) dengan modul Enterprise Resource Planning (ERP) untuk laboratorium pengujian dan kalibrasi. LIMS Ediglab dibangun mengikuti standar ISO/IEC 17025, sehingga seluruh alur kerja laboratorium — mulai dari penerimaan sampel, pengelolaan order, eksekusi pengujian, manajemen peralatan & kalibrasi, kontrol mutu (QA/QC), sampai penerbitan laporan hasil uji (Certificate of Analysis) — dapat dilakukan secara terstandar, traceable, dan audit-ready. Di sisi ERP, Ediglab menyediakan modul manajemen klien & customer, penawaran (quotation), invoice, pembayaran, inventory & reagen, manajemen SDM analis, hingga dashboard analitik bisnis laboratorium secara real-time. Dengan arsitektur Next.js + TypeScript di sisi frontend, FastAPI (Python) sebagai backend, PostgreSQL sebagai database, dan deployment di AWS, Ediglab dirancang scalable, aman, dan siap digunakan oleh laboratorium berskala kecil hingga enterprise yang membutuhkan compliance ISO 17025 sekaligus operasional bisnis yang efisien dalam satu platform.',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+33: {
+  id: 33,
+  title: 'System Monitoring MBG - Sample Testing Input',
+  publishDate: 'Apr 7, 2026',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: mbg1,
+        img2: mbg2,
+        img3: mbg3,
+      },
+    ],
+    Technologies: [
+      {
+        title: 'Tools & Technologies',
+        techs: ["REACT", "FASTAPI", "TYPESCRIPT", "TAILWINDCSS"],
+      },
+    ],
+    Demo: [
+      {
+        webUrl: '',
+        githubUrl: '',
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 33,
+        details:
+          'System Monitoring MBG adalah aplikasi web internal yang saya bangun sebagai tools operasional untuk menginput, memantau, dan mengelola hasil pengujian sampel MBG (Makan Bergizi Gratis) di laboratorium. Sistem ini dibuat untuk menggantikan pencatatan manual via spreadsheet menjadi platform digital terpusat, dimana tim analis bisa langsung input data sampel yang masuk — mulai dari identitas sampel, kode penerimaan, jenis uji (mikrobiologi, kimia, proksimat, dsb.), parameter pengujian, hingga hasil akhir uji beserta kesimpulan layak/tidak layak konsumsi. Frontend dibangun pakai React + TypeScript + Tailwind CSS dengan form input multi-step yang user-friendly dan dashboard monitoring real-time buat tracking status sampel (pending, on-progress, done, rejected). Backend-nya pakai FastAPI (Python) yang expose REST API untuk CRUD data pengujian, autentikasi user, dan agregasi statistik hasil uji. Dengan adanya sistem ini, proses dokumentasi pengujian MBG jadi lebih traceable, cepat, dan siap dijadikan basis laporan ke stakeholder terkait keamanan pangan program MBG. Saat ini aplikasi masih dalam tahap pengembangan dan dijalankan di environment localhost.',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+32: {
+  id: 32,
+  title: 'LSP Satvika Pandu Pramana - Coating Inspector Certification',
+  publishDate: 'Apr 7, 2026',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: pandu1,
+        img2: pandu2,
+        img3: pandu3,
+        img4: pandu4,
+      },
+    ],
+    Technologies: [
+      {
+        title: 'Tools & Technologies',
+        techs: ["ODOO", "PYTHON", "POSTGRESQL"],
+      },
+    ],
+    Demo: [
+      {
+        webUrl: 'https://pandupramana.com/',
+        githubUrl: '',
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 32,
+        details:
+          'Website resmi Lembaga Sertifikasi Profesi (LSP) Satvika Pandu Pramana (pandupramana.com) yang saya kembangkan dan bangun dari nol menggunakan framework Odoo dengan backend Python dan database PostgreSQL. Proyek ini difokuskan untuk kebutuhan sertifikasi profesi berbasis standar ISO/IEC 17025, khususnya pada skema sertifikasi Coating Inspector (Level 1, Level 2, dst.). Saya mengimplementasikan seluruh alur digitalisasi proses sertifikasi di Odoo — mulai dari pendaftaran peserta, pengajuan sertifikasi, pemilihan level sertifikasi, upload dokumen persyaratan, tracking status sertifikasi, hingga penerbitan sertifikat. Modul Odoo custom dikembangkan untuk mengelola data asesi, asesor, skema sertifikasi, jadwal uji kompetensi, dan hasil asesmen agar sesuai dengan persyaratan LSP & BNSP. Bagian frontend landing page, form pengajuan, serta halaman publik dibangun menggunakan Odoo Website Builder + QWeb template yang terintegrasi langsung dengan backend, sehingga peserta dapat melakukan seluruh proses sertifikasi secara online dengan workflow yang terstandar, traceable, dan siap audit.',
+      },
+    ],
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [
+        {
+          id: 1,
+          title: 'Mobile UI',
+          img: WebImage2,
+        },
+        {
+          id: 2,
+          title: 'Web Application',
+          img: WebImage3,
+        },
+        {
+          id: 3,
+          title: 'UI Design',
+          img: WebImage4,
+        },
+        {
+          id: 4,
+          title: 'Kabul Mobile App UI',
+          img: WebImage5,
+        },
+      ],
+    },
+  },
+},
+31: {
+  id: 31,
+  title: 'Website Lab UM - Universitas Negeri Malang',
+  publishDate: 'Apr 7, 2026',
+  tags: 'Web Application',
+  ProjectInfo: {
+    Images: [
+      {
+        img1: labum1,
+        img2: labum2,
+      },
+    ],
+    Technologies: [
+      {
+        title: 'Tools & Technologies',
+        techs: ["ODOO", "PYTHON", "POSTGRESQL"],
+      },
+    ],
+    Demo: [
+      {
+        webUrl: 'https://lab.um.ac.id/',
+        githubUrl: '',
+      },
+    ],
+    ProjectDetailsHeading: 'Description',
+    ProjectDetails: [
+      {
+        id: 31,
+        details:
+          'Website resmi Laboratorium Universitas Negeri Malang (lab.um.ac.id) yang dibangun di atas framework Odoo dengan backend Python dan database PostgreSQL. Pada proyek ini saya mengembangkan salah satu menu fitur layanan laboratorium, dimana setiap laboratorium yang tersimpan di database harus dapat ditampilkan secara dinamis ke halaman frontend melalui REST API. Alur kerjanya: data master lab dikelola lewat modul Odoo (custom model di PostgreSQL), kemudian di-expose ke layer REST API menggunakan controller Odoo (http.Controller) sehingga bisa dikonsumsi oleh halaman publik dan ditampilkan ke pengunjung secara real-time. Implementasinya meliputi perancangan struktur data laboratorium, pembuatan endpoint REST API yang return JSON, serta integrasi tampilan frontend agar setiap lab (beserta detail layanan, alat, dan informasinya) dapat terlihat rapi dan up-to-date di website. Proyek ini mendukung transformasi digital layanan laboratorium UM agar informasi fasilitas lab lebih mudah diakses oleh mahasiswa, peneliti, maupun mitra eksternal.',
       },
     ],
     RelatedProject: {

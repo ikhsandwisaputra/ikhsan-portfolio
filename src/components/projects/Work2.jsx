@@ -7,7 +7,7 @@ import { FaBullseye, FaGlobe } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { FiSearch } from 'react-icons/fi';
 import Loader from '../shared/Loader';
-const Work2 = () => {
+const Work2 = ({ onSelectProject }) => {
  const [loading, setLoading] = useState(true);
  
      useEffect(() => {
@@ -20,7 +20,7 @@ const Work2 = () => {
    
      const [searchTerm, setSearchTerm] = useState('');
      const [selectedCategory, setSelectedCategory] = useState(''); // New state for selected category
-     const [selectedTech, setSelectedTech] = useState('REACT');
+     const [selectedTech, setSelectedTech] = useState('');
    
   
    const [techSearch, setTechSearch] = useState('');
@@ -42,7 +42,7 @@ const Work2 = () => {
    );
 
   return (
-    <div name='work' className='w-full  sm:py-32 py-10'>
+    <div name='work' className='w-full  sm:py-12 '>
       <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center  h-full dark:text-white text-ternary-dark text-center'>
         <div>
           <h1 className='text-4xl text-center font-bold inline mb-5 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-600  sm:mt-20 pb-12 dark:from-blue-200 dark:to-green-200'>
@@ -196,23 +196,33 @@ const Work2 = () => {
             .slice()
             .sort((a, b) => b.id - a.id)
             .map((work) => (
-            <Link
-              to={`/projects/${work.idProjects}`}
+            <div
+              role='button'
+              tabIndex={0}
+              onClick={() => onSelectProject?.(work.idProjects)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  onSelectProject?.(work.idProjects);
+                }
+              }}
               aria-label={`Detail ${work.title}`}
               key={work.title}
+              className='text-left focus:outline-none focus:ring-2 focus:ring-ternary-dark dark:focus:ring-ternary-light rounded-xl'
             >
               <div
                 rel='noreferrer'
-                className='rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-ternary-light dark:bg-ternary-dark overflow-hidden border-2 dark:border-none'
+                className='group rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-ternary-light dark:bg-ternary-dark overflow-hidden border-2 dark:border-none'
                 data-aos='fade-up'
                 data-aos-duration={work.duration}
                 data-aos-easing='linear'
               >
-                {/* Work image */}
-                <img
-                  src={work.imgUrl}
-                  alt='work'
-                  className='w-full h-36 md:h-48 object-cover'
+                {/* Work image — scroll-on-hover preview untuk full-page screenshot */}
+                <div
+                  className='w-full h-36 md:h-48 bg-cover bg-top bg-no-repeat bg-primary-light dark:bg-primary-dark transition-[background-position] duration-[3500ms] ease-linear group-hover:bg-bottom'
+                  style={{ backgroundImage: `url(${work.imgUrl})` }}
+                  role='img'
+                  aria-label={work.title}
                 />
                 {/* Work details */}
                 <div className='w-full p-5 text-ternary-dark dark:text-ternary-light'>
@@ -268,7 +278,7 @@ const Work2 = () => {
                   </div>
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
   </>

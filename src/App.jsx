@@ -1,6 +1,11 @@
 import { AnimatePresence } from 'framer-motion';
 import { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop.jsx';
 import AppFooter from './components/shared/AppFooter.jsx';
 import AppHeader from './components/shared/AppHeader.jsx';
@@ -16,15 +21,26 @@ const Projects = lazy(() => import('./pages/Projects.jsx'));
 
 const ProjectDetails = lazy(() => import('./pages/ProjectDetails.jsx'));
 
+// Home punya sticky nav sendiri (di bawah hero), jadi global navbar
+// di-hide khusus di route '/'. Route lain (mis. /projects/:id) tetep pakai.
+function GlobalNav() {
+  const location = useLocation();
+  if (location.pathname === '/') return null;
+  return (
+    <>
+      <AppHeader />
+      <MobileNav />
+    </>
+  );
+}
+
 function App() {
   return (
     <AnimatePresence>
       <div className=' bg-secondary-light dark:bg-primary-dark transition duration-300 '>
         <Router basename="/ikhsan-portfolio">
           <ScrollToTop />
-          {/* <AppHeader /> */}
-          <AppHeader />
-          <MobileNav />
+          <GlobalNav />
           <Suspense fallback={''}>
             <Routes >
               <Route path='/' element={<Home />} />

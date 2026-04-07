@@ -22,6 +22,26 @@ const Experience = () => {
                 target="_blank"
                 rel="noreferrer"
               >
+               PT ECODIGITUS SAINS DAN TEKNOVASI (2025/10 - Present)
+              </a>
+            }
+            result="Jakarta Timur / INDONESIA"
+            des="working as a professional fullstack developer, during my career here I have created many software development projects"
+             images={["/ikhsan-portfolio/experience/edig-fam.jpeg",
+"/ikhsan-portfolio/experience/edig-fam2.jpeg",
+"/ikhsan-portfolio/experience/edigfam-3.jpeg"
+
+             ]}
+             
+          />
+          <ResumeCard
+            title="Full Stack Web Developer"
+            subTitle={
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+              >
                IDS DEV ID (2021/01 - Present)
               </a>
             }

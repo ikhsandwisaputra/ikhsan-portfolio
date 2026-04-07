@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const ProjectSingle = ({ title, category, image, idProjects }) => {
   const [loading, setLoading] = useState(true);
-  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     // Simulate a delay for demonstration purposes
@@ -15,11 +14,6 @@ const ProjectSingle = ({ title, category, image, idProjects }) => {
     // Cleanup the timeout to avoid memory leaks
     return () => clearTimeout(timeout);
   }, []);
-
-  const handleImageLoad = () => {
-    // Set imageLoaded to true when the image is fully loaded
-    setImageLoaded(true);
-  };
 
   return (
     <motion.div
@@ -36,17 +30,16 @@ const ProjectSingle = ({ title, category, image, idProjects }) => {
         <div>Loading...</div>
       ) : (
         <Link to={`/projects/${idProjects}`} aria-label={`Detail ${title}`}>
-          <div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
-            <div>
-              <h1>id Project {idProjects}</h1>
-              <img
-                src={image}
-                className="rounded-t-xl border-none"
-                alt="Single Project"
-                onLoad={handleImageLoad}
-              />
-            </div>
-            <div className={`text-center px-4 py-6 ${imageLoaded ? 'visible' : 'invisible'}`}>
+          <div className="group rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark overflow-hidden">
+            {/* Scroll-on-hover preview: full-page screenshot apa pun ukurannya
+                bakal di-reveal smooth dari atas ke bawah pas user hover. */}
+            <div
+              className="w-full aspect-[16/10] bg-cover bg-top bg-no-repeat bg-primary-light dark:bg-primary-dark transition-[background-position] duration-[3500ms] ease-linear group-hover:bg-bottom"
+              style={{ backgroundImage: `url(${image})` }}
+              role="img"
+              aria-label={title}
+            />
+            <div className="text-center px-4 py-6">
               <p className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
                 {title}
               </p>

@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base : "/ikhsan-portfolio",
   plugins: [react()],
+  server: {
+    allowedHosts: ["compatriotic-actually-tandra.ngrok-free.dev"]
+  }
 })

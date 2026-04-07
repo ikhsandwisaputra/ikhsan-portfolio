@@ -16,7 +16,17 @@ import c from "../assets/langues/c.png";
 import py from "../assets/langues/py.png";
 import php from "../assets/langues/php.png";
 import java from "../assets/langues/java.png";
-
+import odoo from "../assets/langues/odoo.svg";
+import nexterp from "../assets/langues/nexterp.svg";
+import nextjs from "../assets/langues/nextjs.svg";
+import vue from "../assets/langues/vue.svg";
+import postgresql from "../assets/langues/postgresql.svg";
+import laravel from "../assets/langues/laravel.svg";
+import docker from "../assets/langues/docker.svg";
+import typescript from "../assets/langues/typescript.svg";
+import aws from "../assets/langues/aws.svg";
+import go from "../assets/langues/go.svg";
+import wordpress from "../assets/langues/wordpress.svg";
 // Import images
 import WebImage1 from '../images/my-project/COFFEE-LANDING-PAGE.png';
 import WebImage2 from '../images/my-project/Personal-web.png';
@@ -252,5 +262,70 @@ export const langues = [
     title: "Vite Js",
     style: "shadow-orange-500",
   },
- 
+  {
+    id: 21,
+    src: odoo,
+    title: "Odoo",
+    style: "shadow-purple-700 dark:shadow-purple-500",
+  },
+  {
+    id: 22,
+    src: nexterp,
+    title: "Next ERP",
+    style: "shadow-blue-500 dark:shadow-blue-400",
+  },
+  {
+    id: 23,
+    src: nextjs,
+    title: "Next.js",
+    style: "shadow-gray-700 dark:shadow-gray-400",
+  },
+  {
+    id: 24,
+    src: vue,
+    title: "Vue",
+    style: "shadow-green-500 dark:shadow-green-400",
+  },
+  {
+    id: 25,
+    src: postgresql,
+    title: "PostgreSQL",
+    style: "shadow-blue-400 dark:shadow-blue-300",
+  },
+  {
+    id: 26,
+    src: laravel,
+    title: "Laravel",
+    style: "shadow-red-500 dark:shadow-red-400",
+  },
+  {
+    id: 27,
+    src: docker,
+    title: "Docker",
+    style: "shadow-blue-600 dark:shadow-blue-400",
+  },
+  {
+    id: 28,
+    src: typescript,
+    title: "TypeScript",
+    style: "shadow-blue-500 dark:shadow-blue-300",
+  },
+  {
+    id: 29,
+    src: aws,
+    title: "AWS Cloud",
+    style: "shadow-orange-500 dark:shadow-orange-400",
+  },
+  {
+    id: 30,
+    src: go,
+    title: "Go",
+    style: "shadow-cyan-500 dark:shadow-cyan-400",
+  },
+  {
+    id: 31,
+    src: wordpress,
+    title: "WordPress",
+    style: "shadow-blue-500 dark:shadow-blue-400",
+  },
 ];

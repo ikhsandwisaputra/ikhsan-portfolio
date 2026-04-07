@@ -2,14 +2,18 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import projectDetails from '../data/projectDetails';
 import { motion } from 'framer-motion';
-import { FiClock, FiTag } from 'react-icons/fi';
+import { FiArrowLeft, FiClock, FiTag } from 'react-icons/fi';
 import Carousel from '../components/reusable/Carousel';
 import { BsGithub } from 'react-icons/bs';
 import { BsYoutube } from 'react-icons/bs';
 import { FaGlobe } from 'react-icons/fa';
 
-const ProjectDetail = () => {
-  const { projectId } = useParams();
+// Bisa dipake dua cara:
+// 1. Standalone via React Router → ambil projectId dari URL params
+// 2. Inline (di dalam Projects tab) → terima projectId + onBack via props
+const ProjectDetail = ({ projectId: propProjectId, onBack }) => {
+  const params = useParams();
+  const projectId = propProjectId ?? params.projectId;
   const project = projectDetails[projectId];
 
   if (!project) {
@@ -66,10 +70,22 @@ const ProjectDetail = () => {
           duration: 0.6,
           delay: 0.15,
         }}
-        className='container mx-auto  pt-16 sm:pt-10'
+        className={`container mx-auto px-4 ${onBack ? 'pt-4 sm:pt-6' : 'pt-16 sm:pt-10'}`}
       >
+        {/* Back button — cuma muncul kalau dipakai inline (ada onBack prop) */}
+        {onBack && (
+          <button
+            type='button'
+            onClick={onBack}
+            className='inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-lg bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light transition-colors shadow-sm'
+          >
+            <FiArrowLeft className='w-5 h-5' />
+            <span className='font-general-medium'>Back to Projects</span>
+          </button>
+        )}
+
         {/* PROJECT HEADER */}
-        <p className='font-general-medium text-center text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-600  sm:mt-20 pb-12 dark:from-blue-200 dark:to-green-200'>
+        <p className={`font-general-medium text-center text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-600 dark:from-blue-200 dark:to-green-200 ${onBack ? 'pb-6' : 'pb-12'}`}>
           {title}
         </p>
         {/* <h1>{title}</h1> */}

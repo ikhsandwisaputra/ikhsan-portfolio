@@ -47,15 +47,15 @@ const Carousel = ({ items, autoSlideInterval = 7000 }) => {
     >
       <div className='overflow-hidden sm:max-w-[800px] sm:max-h-[450px] mx-auto rounded-xl relative aspect-video'>
         <div
-          className='flex transition-transform ease-in-out duration-300 transform'
+          className='flex h-full transition-transform ease-in-out duration-300 transform'
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {items.map((item, index) => (
-            <div key={index} className='w-full flex-shrink-0 mx-auto'>
+            <div key={index} className='w-full h-full flex-shrink-0 mx-auto'>
               <img
                 src={item.image}
                 alt={item.alt}
-                className='w-full h-full bg-contain rounded-xl'
+                className='w-full h-full object-contain rounded-xl'
               />
             </div>
           ))}
@@ -68,7 +68,7 @@ const Carousel = ({ items, autoSlideInterval = 7000 }) => {
             key={index}
             src={item.image}
             alt={item.alt}
-            className={`w-16 h-14 rounded-lg cursor-pointer ${
+            className={`w-16 h-14 object-cover rounded-lg cursor-pointer ${
               index === currentIndex
                 ? 'border-black border-2 dark:border-ternary-light'
                 : ''

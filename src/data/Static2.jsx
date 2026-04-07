@@ -14,7 +14,17 @@ import c from "../assets/langues/c.png";
 import py from "../assets/langues/py.png";
 import php from "../assets/langues/php.png";
 import java from "../assets/langues/java.png";
-
+import odoo from "../assets/langues/odoo.svg";
+import nexterp from "../assets/langues/nexterp.svg";
+import nextjs from "../assets/langues/nextjs.svg";
+import vue from "../assets/langues/vue.svg";
+import postgresql from "../assets/langues/postgresql.svg";
+import laravel from "../assets/langues/laravel.svg";
+import docker from "../assets/langues/docker.svg";
+import typescript from "../assets/langues/typescript.svg";
+import aws from "../assets/langues/aws.svg";
+import go from "../assets/langues/go.svg";
+import wordpress from "../assets/langues/wordpress.svg";
 // Import images
 import WebImage1 from '../images/my-project/COFFEE-LANDING-PAGE.png';
 import WebImage2 from '../images/my-project/Personal-web.png';
@@ -45,6 +55,10 @@ import WebImage13 from '../images/my-project/nasi.png';
   import WebImage27 from '../images/my-project/lol-hero/image.png';
   import WebImage28 from '../images/my-project/sbi/image-1.png';
   import WebImage29 from '../images/my-project/poetry-ai/pi-1.png';
+  import WebImage30 from '../images/my-project/ediglab/screencapture-ediglab-2026-04-07-14_11_10.png';
+  import WebImage31 from '../images/my-project/labum/screencapture-lab-um-ac-id-2026-04-07-14_21_48.png';
+  import WebImage32 from '../images/my-project/pandupramana/screencapture-pandupramana-2026-04-07-09_40_46.png';
+  import WebImage33 from '../images/my-project/mbg/screencapture-localhost-5173-ikhsan-portfolio-2026-04-07-15_52_57.png';
 
 
 
@@ -356,6 +370,50 @@ tech: ["REACT", "TAILWIND CSS", "TYPESCRIPT", "NESTJS", "MONGODB"],
   webUrl: "https://poetry-ai-two.vercel.app/",
   duration: "400",
   category: 'Web Application',
+},
+{
+  id: 30,
+  idProjects: 30,
+  title: 'Ediglab - LIMS & ERP',
+  imgUrl: WebImage30,
+  tech: ["NEXT.JS", "TYPESCRIPT", "FASTAPI", "POSTGRESQL", "TAILWINDCSS", "AWS"],
+  githubUrl: "",
+  webUrl: "https://ediglab.com/",
+  duration: "400",
+  category: 'Web Application',
+},
+{
+  id: 31,
+  idProjects: 31,
+  title: 'Website Lab UM - Universitas Negeri Malang',
+  imgUrl: WebImage31,
+  tech: ["ODOO", "PYTHON", "POSTGRESQL"],
+  githubUrl: "",
+  webUrl: "https://lab.um.ac.id/",
+  duration: "400",
+  category: 'Web Application',
+},
+{
+  id: 32,
+  idProjects: 32,
+  title: 'LSP Satvika Pandu Pramana - Coating Inspector Certification',
+  imgUrl: WebImage32,
+  tech: ["ODOO", "PYTHON", "POSTGRESQL"],
+  githubUrl: "",
+  webUrl: "https://pandupramana.com/",
+  duration: "400",
+  category: 'Web Application',
+},
+{
+  id: 33,
+  idProjects: 33,
+  title: 'System Monitoring MBG - Sample Testing Input',
+  imgUrl: WebImage33,
+  tech: ["REACT", "FASTAPI", "TYPESCRIPT", "TAILWINDCSS"],
+  githubUrl: "",
+  webUrl: "",
+  duration: "400",
+  category: 'Web Application',
 }
 
 
@@ -495,5 +553,71 @@ export const langues = [
     src: java,
     title: "Java",
     style: "shadow-orange-500",
+  },
+  {
+    id: 21,
+    src: odoo,
+    title: "Odoo",
+    style: "shadow-purple-700 dark:shadow-purple-500",
+  },
+  {
+    id: 22,
+    src: nexterp,
+    title: "Next ERP",
+    style: "shadow-blue-500 dark:shadow-blue-400",
+  },
+  {
+    id: 23,
+    src: nextjs,
+    title: "Next.js",
+    style: "shadow-gray-700 dark:shadow-gray-400",
+  },
+  {
+    id: 24,
+    src: vue,
+    title: "Vue",
+    style: "shadow-green-500 dark:shadow-green-400",
+  },
+  {
+    id: 25,
+    src: postgresql,
+    title: "PostgreSQL",
+    style: "shadow-blue-400 dark:shadow-blue-300",
+  },
+  {
+    id: 26,
+    src: laravel,
+    title: "Laravel",
+    style: "shadow-red-500 dark:shadow-red-400",
+  },
+  {
+    id: 27,
+    src: docker,
+    title: "Docker",
+    style: "shadow-blue-600 dark:shadow-blue-400",
+  },
+  {
+    id: 28,
+    src: typescript,
+    title: "TypeScript",
+    style: "shadow-blue-500 dark:shadow-blue-300",
+  },
+  {
+    id: 29,
+    src: aws,
+    title: "AWS Cloud",
+    style: "shadow-orange-500 dark:shadow-orange-400",
+  },
+  {
+    id: 30,
+    src: go,
+    title: "Go",
+    style: "shadow-cyan-500 dark:shadow-cyan-400",
+  },
+  {
+    id: 31,
+    src: wordpress,
+    title: "WordPress",
+    style: "shadow-blue-500 dark:shadow-blue-400",
   },
 ];

@@ -1,25 +1,74 @@
-import { Link } from 'react-router-dom';
+import { lazy, Suspense, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
 import AppBanner from '../components/shared/AppBanner';
-import Button from '../components/reusable/Button';
-import Work from '../components/projects/Work';
+import StickyNav from '../components/shared/StickyNav';
+
+const Projects = lazy(() => import('./Projects'));
+const About = lazy(() => import('./AboutMe'));
+const Contact = lazy(() => import('./Contact'));
 
 const Home = () => {
-	return (
-		<div className="mx-auto w-full">
+  const [activeSection, setActiveSection] = useState('projects');
+  const contentRef = useRef(null);
 
-			<AppBanner></AppBanner>
-			<Work />
-			<div className="mt-8 sm:mt-10 flex justify-center">
-				<Link
-					to="/projects"
-					className="font-general-medium flex items-center px-6 hover:shadow-xl border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-2 shadow-lg rounded-lg bg-ternary-light focus:ring-1 focus:ring-indigo-900 hover:bg-ternary-dark text-gray-500 hover:text-white duration-500 text-lg sm:text-xl "
-					aria-label="More Projects"
-				>
-					<Button title="More Projects" />
-				</Link>
-			</div>
-		</div>
-	);
+  const handleSelectSection = (section) => {
+    setActiveSection(section);
+
+    // Snap ke top konten kalau user udah scroll lewat hero
+    requestAnimationFrame(() => {
+      const content = contentRef.current;
+      if (!content) return;
+      const contentTop = content.offsetTop;
+      if (window.scrollY > contentTop) {
+        window.scrollTo({ top: contentTop, behavior: 'auto' });
+      }
+    });
+  };
+
+  // Klik logo → balik ke paling atas (lihat hero lagi)
+  const handleLogoClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const renderSection = () => {
+    switch (activeSection) {
+      case 'about':
+        return <About />;
+      case 'contact':
+        return <Contact />;
+      case 'projects':
+      default:
+        return <Projects />;
+    }
+  };
+
+  return (
+    <div className="mx-auto w-full">
+      {/* === HERO === */}
+      <AppBanner />
+
+      {/* === CONTENT WRAPPER === */}
+      <div ref={contentRef} className="relative">
+        <StickyNav
+          activeSection={activeSection}
+          onSelectSection={handleSelectSection}
+          onLogoClick={handleLogoClick}
+        />
+
+        <Suspense fallback={<div className="min-h-[60vh]" />}>
+          <motion.main
+            key={activeSection}
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.35, ease: 'easeOut' }}
+            className="min-h-[60vh]"
+          >
+            {renderSection()}
+          </motion.main>
+        </Suspense>
+      </div>
+    </div>
+  );
 };
 
 export default Home;

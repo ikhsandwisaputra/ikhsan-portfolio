@@ -18,7 +18,7 @@ const Work = () => {
 
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(''); // New state for selected category
-  const [selectedTech, setSelectedTech] = useState('REACT');
+  const [selectedTech, setSelectedTech] = useState('');
 
   const [categorySearch, setCategorySearch] = useState('');
 const [techSearch, setTechSearch] = useState('');
