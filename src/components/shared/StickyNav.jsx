@@ -6,8 +6,8 @@ import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import logoImg from '../../images/logo-ids-dev.jpeg';
 
 const NAV_ITEMS = [
-  { id: 'projects', label: 'Projects', Icon: MdCode },
   { id: 'about', label: 'About', Icon: MdRocket },
+  { id: 'projects', label: 'Projects', Icon: MdCode },
   { id: 'contact', label: 'Contact', Icon: MdPhoneAndroid },
 ];
 

@@ -8,7 +8,7 @@ const About = lazy(() => import('./AboutMe'));
 const Contact = lazy(() => import('./Contact'));
 
 const Home = () => {
-  const [activeSection, setActiveSection] = useState('projects');
+  const [activeSection, setActiveSection] = useState('about');
   const contentRef = useRef(null);
 
   const handleSelectSection = (section) => {
@@ -32,13 +32,13 @@ const Home = () => {
 
   const renderSection = () => {
     switch (activeSection) {
-      case 'about':
-        return <About />;
+      case 'projects':
+        return <Projects />;
       case 'contact':
         return <Contact />;
-      case 'projects':
+      case 'about':
       default:
-        return <Projects />;
+        return <About />;
     }
   };
 

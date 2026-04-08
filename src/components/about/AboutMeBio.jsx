@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from 'react';
-import pic from '../../images/mu-foto/about.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../../css/sorot.css'; // Sesuaikan dengan nama file CSS Anda
 import file from '../../pdf/Ikhsan-dwi-saputra-resume.pdf';
+import DitheringCat from '../dithering/DitheringCat';
+import DitheringErrorBoundary from '../dithering/DitheringErrorBoundary';
 
 const About = () => {
   useEffect(() => {
@@ -64,11 +65,13 @@ const About = () => {
 
         <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
           <div className='flex justify-center items-center'>
-            <img
-              src={pic}
-              alt='mahdi laith'
-              className='rounded-full shadow-2xl outline-offset-8 outline-dashed outline-2 object-cover outline-ternary-dark dark:outline-ternary-light w-[15rem] h-[15rem] sm:w-[20rem] sm:h-[20rem]'
-            />
+            <DitheringErrorBoundary
+              className='rounded-full shadow-2xl outline-offset-8 outline-dashed outline-2 outline-ternary-dark dark:outline-ternary-light w-[15rem] h-[15rem] sm:w-[20rem] sm:h-[20rem] overflow-hidden'
+            >
+              <DitheringCat
+                className='rounded-full shadow-2xl outline-offset-8 outline-dashed outline-2 outline-ternary-dark dark:outline-ternary-light w-[15rem] h-[15rem] sm:w-[20rem] sm:h-[20rem] overflow-hidden'
+              />
+            </DitheringErrorBoundary>
           </div>
 
           <div className='flex flex-col justify-center'>
